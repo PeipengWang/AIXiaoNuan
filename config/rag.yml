@@ -1,0 +1,3 @@
+MUSIC_URL: http://127.0.0.1:8006
+TTS_URL: http://154.8。237.182:9000/tts-stream
+ASR_API_URL: http://152.136.246.11:9001/asr

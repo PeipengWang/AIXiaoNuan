@@ -1,0 +1,771 @@
+2026-06-13 10:00:14,179 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有1条消息。
+2026-06-13 10:00:14,180 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 帮我放一首歌吧
+2026-06-13 10:00:14,180 - agent - DEBUG - middleware.py:69 - [log_before_model]HumanMessage | 帮我放一首歌吧
+2026-06-13 10:00:15,589 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: query_music_library
+2026-06-13 10:00:15,590 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'keyword': ''}
+2026-06-13 10:00:15,590 - agent - INFO - middleware.py:28 - [tool monitor]工具query_music_library调用成功
+2026-06-13 10:00:15,642 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有3条消息。
+2026-06-13 10:00:15,642 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 帮我放一首歌吧
+2026-06-13 10:00:15,642 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，我先查一下音乐库里有哪些歌曲可以推荐给你。
+2026-06-13 10:00:15,643 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "音乐库总计3首歌曲",
+  "song_list": [
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    }
+  ]
+}
+2026-06-13 10:00:15,643 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "code": 1,
+  "msg": "音乐库总计3首歌曲",
+  "song_list": [
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    }
+  ]
+}
+2026-06-13 10:00:17,367 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: play_selected_music
+2026-06-13 10:00:17,368 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'song_full_path': 'E:\\pythonProject1\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3'}
+2026-06-13 10:00:17,369 - agent - INFO - middleware.py:28 - [tool monitor]工具play_selected_music调用成功
+2026-06-13 10:00:17,420 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有5条消息。
+2026-06-13 10:00:17,420 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 帮我放一首歌吧
+2026-06-13 10:00:17,420 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，我先查一下音乐库里有哪些歌曲可以推荐给你。
+2026-06-13 10:00:17,420 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "音乐库总计3首歌曲",
+  "song_list": [
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    }
+  ]
+}
+2026-06-13 10:00:17,422 - agent - INFO - middleware.py:61 - [消息 4] Tool(None): 音乐库里有3首疗愈风格的曲子，都很适合舒缓心情。我来为你播放第一首《心灵疗愈》海河，希望能带给你一份宁静与放松。
+2026-06-13 10:00:17,422 - agent - INFO - middleware.py:61 - [消息 5] Tool(play_selected_music): {
+  "status": "error",
+  "msg": "推送播放请求失败：Invalid URL '127.0.0.1/api/music/play': No scheme supplied. Perhaps you meant https://127.0.0.1/api/music/play?"
+}
+2026-06-13 10:00:17,422 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "status": "error",
+  "msg": "推送播放请求失败：Invalid URL '127.0.0.1/api/music/play': No scheme supplied. Perhaps you meant https://127.0.0.1/api/music/play?"
+}
+2026-06-13 10:06:15,209 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有1条消息。
+2026-06-13 10:06:15,210 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 请帮我播放一首歌吧
+2026-06-13 10:06:15,210 - agent - DEBUG - middleware.py:69 - [log_before_model]HumanMessage | 请帮我播放一首歌吧
+2026-06-13 10:06:16,874 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: query_music_library
+2026-06-13 10:06:16,874 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'keyword': ''}
+2026-06-13 10:06:16,875 - agent - INFO - middleware.py:28 - [tool monitor]工具query_music_library调用成功
+2026-06-13 10:06:16,926 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有3条消息。
+2026-06-13 10:06:16,927 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 请帮我播放一首歌吧
+2026-06-13 10:06:16,927 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，让我先查询一下音乐库，看看有哪些适合的歌曲可以推荐给您。
+2026-06-13 10:06:16,927 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "音乐库总计3首歌曲",
+  "song_list": [
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    }
+  ]
+}
+2026-06-13 10:06:16,927 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "code": 1,
+  "msg": "音乐库总计3首歌曲",
+  "song_list": [
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    }
+  ]
+}
+2026-06-13 10:06:18,653 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: play_selected_music
+2026-06-13 10:06:18,653 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'song_full_path': 'E:\\pythonProject1\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3'}
+2026-06-13 10:06:18,655 - agent - INFO - middleware.py:28 - [tool monitor]工具play_selected_music调用成功
+2026-06-13 10:06:18,710 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有5条消息。
+2026-06-13 10:06:18,710 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 请帮我播放一首歌吧
+2026-06-13 10:06:18,710 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，让我先查询一下音乐库，看看有哪些适合的歌曲可以推荐给您。
+2026-06-13 10:06:18,710 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "音乐库总计3首歌曲",
+  "song_list": [
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    }
+  ]
+}
+2026-06-13 10:06:18,710 - agent - INFO - middleware.py:61 - [消息 4] Tool(None): 太好了！音乐库里有3首非常棒的疗愈音乐，都很适合放松心情。我来为您推荐并播放一首吧～
+
+先为您播放这首 **《心灵疗愈》海河**，它是一首专门用于心理治疗和情绪化解的轻音乐，非常适合此刻聆听。
+2026-06-13 10:06:18,710 - agent - INFO - middleware.py:61 - [消息 5] Tool(play_selected_music): {
+  "status": "error",
+  "msg": "推送播放请求失败：Invalid URL '127.0.0.1/api/play_song_by_path': No scheme supplied. Perhaps you meant https://127.0.0.1/api/play_song_by_path?"
+}
+2026-06-13 10:06:18,711 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "status": "error",
+  "msg": "推送播放请求失败：Invalid URL '127.0.0.1/api/play_song_by_path': No scheme supplied. Perhaps you meant https://127.0.0.1/api/play_song_by_path?"
+}
+2026-06-13 10:06:20,203 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: play_selected_music
+2026-06-13 10:06:20,203 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'song_full_path': 'E:\\pythonProject1\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3'}
+2026-06-13 10:06:20,204 - agent - INFO - middleware.py:28 - [tool monitor]工具play_selected_music调用成功
+2026-06-13 10:06:20,256 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有7条消息。
+2026-06-13 10:06:20,256 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 请帮我播放一首歌吧
+2026-06-13 10:06:20,256 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，让我先查询一下音乐库，看看有哪些适合的歌曲可以推荐给您。
+2026-06-13 10:06:20,257 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "音乐库总计3首歌曲",
+  "song_list": [
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    }
+  ]
+}
+2026-06-13 10:06:20,257 - agent - INFO - middleware.py:61 - [消息 4] Tool(None): 太好了！音乐库里有3首非常棒的疗愈音乐，都很适合放松心情。我来为您推荐并播放一首吧～
+
+先为您播放这首 **《心灵疗愈》海河**，它是一首专门用于心理治疗和情绪化解的轻音乐，非常适合此刻聆听。
+2026-06-13 10:06:20,257 - agent - INFO - middleware.py:61 - [消息 5] Tool(play_selected_music): {
+  "status": "error",
+  "msg": "推送播放请求失败：Invalid URL '127.0.0.1/api/play_song_by_path': No scheme supplied. Perhaps you meant https://127.0.0.1/api/play_song_by_path?"
+}
+2026-06-13 10:06:20,257 - agent - INFO - middleware.py:61 - [消息 6] Tool(None): 看起来播放请求遇到了一点小技术问题，不过别担心！让我换一首试试看。
+2026-06-13 10:06:20,257 - agent - INFO - middleware.py:61 - [消息 7] Tool(play_selected_music): {
+  "status": "error",
+  "msg": "推送播放请求失败：Invalid URL '127.0.0.1/api/play_song_by_path': No scheme supplied. Perhaps you meant https://127.0.0.1/api/play_song_by_path?"
+}
+2026-06-13 10:06:20,257 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "status": "error",
+  "msg": "推送播放请求失败：Invalid URL '127.0.0.1/api/play_song_by_path': No scheme supplied. Perhaps you meant https://127.0.0.1/api/play_song_by_path?"
+}
+2026-06-13 10:06:21,348 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: play_selected_music
+2026-06-13 10:06:21,348 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'song_full_path': 'E:\\pythonProject1\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3'}
+2026-06-13 10:06:21,349 - agent - INFO - middleware.py:28 - [tool monitor]工具play_selected_music调用成功
+2026-06-13 10:06:21,400 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有9条消息。
+2026-06-13 10:06:21,400 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 请帮我播放一首歌吧
+2026-06-13 10:06:21,401 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，让我先查询一下音乐库，看看有哪些适合的歌曲可以推荐给您。
+2026-06-13 10:06:21,401 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "音乐库总计3首歌曲",
+  "song_list": [
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    }
+  ]
+}
+2026-06-13 10:06:21,401 - agent - INFO - middleware.py:61 - [消息 4] Tool(None): 太好了！音乐库里有3首非常棒的疗愈音乐，都很适合放松心情。我来为您推荐并播放一首吧～
+
+先为您播放这首 **《心灵疗愈》海河**，它是一首专门用于心理治疗和情绪化解的轻音乐，非常适合此刻聆听。
+2026-06-13 10:06:21,401 - agent - INFO - middleware.py:61 - [消息 5] Tool(play_selected_music): {
+  "status": "error",
+  "msg": "推送播放请求失败：Invalid URL '127.0.0.1/api/play_song_by_path': No scheme supplied. Perhaps you meant https://127.0.0.1/api/play_song_by_path?"
+}
+2026-06-13 10:06:21,401 - agent - INFO - middleware.py:61 - [消息 6] Tool(None): 看起来播放请求遇到了一点小技术问题，不过别担心！让我换一首试试看。
+2026-06-13 10:06:21,401 - agent - INFO - middleware.py:61 - [消息 7] Tool(play_selected_music): {
+  "status": "error",
+  "msg": "推送播放请求失败：Invalid URL '127.0.0.1/api/play_song_by_path': No scheme supplied. Perhaps you meant https://127.0.0.1/api/play_song_by_path?"
+}
+2026-06-13 10:06:21,401 - agent - INFO - middleware.py:61 - [消息 8] Tool(None): 
+2026-06-13 10:06:21,401 - agent - INFO - middleware.py:61 - [消息 9] Tool(play_selected_music): {
+  "status": "error",
+  "msg": "推送播放请求失败：Invalid URL '127.0.0.1/api/play_song_by_path': No scheme supplied. Perhaps you meant https://127.0.0.1/api/play_song_by_path?"
+}
+2026-06-13 10:06:21,401 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "status": "error",
+  "msg": "推送播放请求失败：Invalid URL '127.0.0.1/api/play_song_by_path': No scheme supplied. Perhaps you meant https://127.0.0.1/api/play_song_by_path?"
+}
+2026-06-13 10:10:18,881 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有1条消息。
+2026-06-13 10:10:18,882 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 请帮我播放一首歌吧
+2026-06-13 10:10:18,882 - agent - DEBUG - middleware.py:69 - [log_before_model]HumanMessage | 请帮我播放一首歌吧
+2026-06-13 10:10:20,687 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: query_music_library
+2026-06-13 10:10:20,688 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'keyword': ''}
+2026-06-13 10:10:44,924 - agent - INFO - middleware.py:28 - [tool monitor]工具query_music_library调用成功
+2026-06-13 10:10:44,979 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有3条消息。
+2026-06-13 10:10:44,980 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 请帮我播放一首歌吧
+2026-06-13 10:10:44,980 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，我先查看一下音乐库中都有哪些歌曲，然后为你挑选一首合适的。
+2026-06-13 10:10:44,980 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "音乐库总计3首歌曲",
+  "song_list": [
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    }
+  ]
+}
+2026-06-13 10:10:44,980 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "code": 1,
+  "msg": "音乐库总计3首歌曲",
+  "song_list": [
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    }
+  ]
+}
+2026-06-13 10:10:47,074 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: play_selected_music
+2026-06-13 10:10:47,074 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'song_full_path': 'E:\\pythonProject1\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3'}
+2026-06-13 10:11:57,940 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有1条消息。
+2026-06-13 10:11:57,941 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 帮我播放一首歌吧
+2026-06-13 10:11:57,941 - agent - DEBUG - middleware.py:69 - [log_before_model]HumanMessage | 帮我播放一首歌吧
+2026-06-13 10:11:59,229 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: query_music_library
+2026-06-13 10:11:59,230 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'keyword': ''}
+2026-06-13 10:11:59,231 - agent - INFO - middleware.py:28 - [tool monitor]工具query_music_library调用成功
+2026-06-13 10:11:59,282 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有3条消息。
+2026-06-13 10:11:59,283 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 帮我播放一首歌吧
+2026-06-13 10:11:59,283 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，我来查一下音乐库中都有哪些歌曲，为你挑选一首合适的。
+2026-06-13 10:11:59,283 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "音乐库总计3首歌曲",
+  "song_list": [
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    }
+  ]
+}
+2026-06-13 10:11:59,283 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "code": 1,
+  "msg": "音乐库总计3首歌曲",
+  "song_list": [
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    }
+  ]
+}
+2026-06-13 10:12:00,749 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: play_selected_music
+2026-06-13 10:12:00,750 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'song_full_path': 'E:\\pythonProject1\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3'}
+2026-06-13 10:12:02,793 - agent - INFO - middleware.py:28 - [tool monitor]工具play_selected_music调用成功
+2026-06-13 10:12:02,844 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有5条消息。
+2026-06-13 10:12:02,844 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 帮我播放一首歌吧
+2026-06-13 10:12:02,845 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，我来查一下音乐库中都有哪些歌曲，为你挑选一首合适的。
+2026-06-13 10:12:02,845 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "音乐库总计3首歌曲",
+  "song_list": [
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    }
+  ]
+}
+2026-06-13 10:12:02,845 - agent - INFO - middleware.py:61 - [消息 4] Tool(None): 音乐库里有3首非常棒的疗愈音乐，我来为你播放第一首《心灵疗愈》海河，这是一首很舒缓的心理治疗音乐，希望能带给你平静和放松的感觉。
+2026-06-13 10:12:02,845 - agent - INFO - middleware.py:61 - [消息 5] Tool(play_selected_music): {
+  "status": "error",
+  "msg": "推送播放请求失败：HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: /api/play_song_by_path?song_path=E%3A%5CpythonProject1%5Cmusic%5C%E3%80%8A%E5%BF%83%E7%81%B5%E7%96%97%E6%84%88%E3%80%8B%E6%B5%B7%E6%B2%B3%E3%80%90%E5%BF%83%E7%90%86%E6%B2%BB%E7%96%97%E9%9F%B3%E4%B9%90%2B%E5%8C%96%E8%A7%A3%E6%83%85%E7%BB%AA%3D%E6%91%86%E8%84%B1%E6%8A%91%E9%83%81%E7%97%87%E7%84%A6%E8%99%91%E7%97%87%E3%80%91.mp3 (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=80): Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。\"))"
+}
+2026-06-13 10:12:02,845 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "status": "error",
+  "msg": "推送播放请求失败：HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: /api/play_song_by_path?song_path=E%3A%5CpythonProject1%5Cmusic%5C%E3%80%8A%E5%BF%83%E7%81%B5%E7%96%97%E6%84%88%E3%80%8B%E6%B5%B7%E6%B2%B3%E3%80%90%E5%BF%83%E7%90%86%E6%B2%BB%E7%96%97%E9%9F%B3%E4%B9%90%2B%E5%8C%96%E8%A7%A3%E6%83%85%E7%BB%AA%3D%E6%91%86%E8%84%B1%E6%8A%91%E9%83%81%E7%97%87%E7%84%A6%E8%99%91%E7%97%87%E3%80%91.mp3 (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=80): Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。\"))"
+}
+2026-06-13 10:13:51,361 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有1条消息。
+2026-06-13 10:13:51,361 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 帮我放一首歌吧
+2026-06-13 10:13:51,361 - agent - DEBUG - middleware.py:69 - [log_before_model]HumanMessage | 帮我放一首歌吧
+2026-06-13 10:13:52,680 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: query_music_library
+2026-06-13 10:13:52,681 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'keyword': ''}
+2026-06-13 10:13:52,682 - agent - INFO - middleware.py:28 - [tool monitor]工具query_music_library调用成功
+2026-06-13 10:13:52,733 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有3条消息。
+2026-06-13 10:13:52,733 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 帮我放一首歌吧
+2026-06-13 10:13:52,734 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，让我先看看音乐库里有哪些歌曲可以选择。
+2026-06-13 10:13:52,734 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "音乐库总计3首歌曲",
+  "song_list": [
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    }
+  ]
+}
+2026-06-13 10:13:52,734 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "code": 1,
+  "msg": "音乐库总计3首歌曲",
+  "song_list": [
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    }
+  ]
+}
+2026-06-13 10:14:10,338 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有1条消息。
+2026-06-13 10:14:10,338 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 心灵疗愈》海河
+2026-06-13 10:14:10,338 - agent - DEBUG - middleware.py:69 - [log_before_model]HumanMessage | 心灵疗愈》海河
+2026-06-13 10:14:12,282 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: rag_summarize
+2026-06-13 10:14:12,282 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'query': '心灵疗愈 海河'}
+2026-06-13 10:14:12,283 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: query_music_library
+2026-06-13 10:14:12,283 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'keyword': '心灵疗愈 海河'}
+2026-06-13 10:14:12,285 - agent - INFO - middleware.py:28 - [tool monitor]工具query_music_library调用成功
+2026-06-13 10:14:16,830 - agent - INFO - middleware.py:28 - [tool monitor]工具rag_summarize调用成功
+2026-06-13 10:14:16,883 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有4条消息。
+2026-06-13 10:14:16,883 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 心灵疗愈》海河
+2026-06-13 10:14:16,883 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，我来先获取更多信息，理解你的需求。
+
+> 我需要先调用 rag_summarize 来获取关于"心灵疗愈"相关的知识背景，同时调用 query_music_library 来搜索与"心灵疗愈"和"海河"相关的音乐。
+2026-06-13 10:14:16,883 - agent - INFO - middleware.py:61 - [消息 3] Tool(rag_summarize): 参考资料整合后的事实导向总结：
+
+**主题：心理健康与自我调节的相关案例与建议**
+
+**1. 个体心理状态与行为模式案例**
+*   存在一种内心冲突的描述：个体表面表现（充满洞见、感情充沛、关怀他人）与内部感知（感到存在“黑暗巨兽”，可能导向孤独与怪诞）的对比。
+*   案例一（自述）：高中三年级时，经历了几段短暂经历，改变了个体对自身严重强迫症状与怪异宗教狂热的看法。
+*   案例二（自述）：1961年（13岁时），个体从开朗健谈、朋友众多，突然毫无征兆地自我封闭，独自活动。
+*   案例三（观察）：在为老年精神病患之家送药时，目睹了多种严重精神疾病症状，包括：性行为失控、模仿语言症（重复同一词汇）、精神分裂症、重度失智等。
+
+**2. 情绪调节方法建议**
+*   建议：通过“每日感恩记录”来关注已经拥有的事物。
+
+**3. 补充信息**
+*   资料提及“视其为非道德”，但未提供相关背景或定义，信息不足。
+2026-06-13 10:14:16,883 - agent - INFO - middleware.py:61 - [消息 4] Tool(query_music_library): {
+  "code": 1,
+  "msg": "匹配关键词「心灵疗愈 海河」共0首",
+  "song_list": []
+}
+2026-06-13 10:14:16,883 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "code": 1,
+  "msg": "匹配关键词「心灵疗愈 海河」共0首",
+  "song_list": []
+}
+2026-06-13 10:14:18,206 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: query_music_library
+2026-06-13 10:14:18,207 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'keyword': ''}
+2026-06-13 10:14:18,208 - agent - INFO - middleware.py:28 - [tool monitor]工具query_music_library调用成功
+2026-06-13 10:14:18,259 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有6条消息。
+2026-06-13 10:14:18,259 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 心灵疗愈》海河
+2026-06-13 10:14:18,260 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，我来先获取更多信息，理解你的需求。
+
+> 我需要先调用 rag_summarize 来获取关于"心灵疗愈"相关的知识背景，同时调用 query_music_library 来搜索与"心灵疗愈"和"海河"相关的音乐。
+2026-06-13 10:14:18,260 - agent - INFO - middleware.py:61 - [消息 3] Tool(rag_summarize): 参考资料整合后的事实导向总结：
+
+**主题：心理健康与自我调节的相关案例与建议**
+
+**1. 个体心理状态与行为模式案例**
+*   存在一种内心冲突的描述：个体表面表现（充满洞见、感情充沛、关怀他人）与内部感知（感到存在“黑暗巨兽”，可能导向孤独与怪诞）的对比。
+*   案例一（自述）：高中三年级时，经历了几段短暂经历，改变了个体对自身严重强迫症状与怪异宗教狂热的看法。
+*   案例二（自述）：1961年（13岁时），个体从开朗健谈、朋友众多，突然毫无征兆地自我封闭，独自活动。
+*   案例三（观察）：在为老年精神病患之家送药时，目睹了多种严重精神疾病症状，包括：性行为失控、模仿语言症（重复同一词汇）、精神分裂症、重度失智等。
+
+**2. 情绪调节方法建议**
+*   建议：通过“每日感恩记录”来关注已经拥有的事物。
+
+**3. 补充信息**
+*   资料提及“视其为非道德”，但未提供相关背景或定义，信息不足。
+2026-06-13 10:14:18,260 - agent - INFO - middleware.py:61 - [消息 4] Tool(query_music_library): {
+  "code": 1,
+  "msg": "匹配关键词「心灵疗愈 海河」共0首",
+  "song_list": []
+}
+2026-06-13 10:14:18,260 - agent - INFO - middleware.py:61 - [消息 5] Tool(None): 看起来没有直接匹配到名为《心灵疗愈》且与"海河"相关的歌曲。让我换个思路，先看看音乐库里都有哪些歌曲，同时也了解一下你的情绪状态，这样能更好地为你推荐合适的音乐。
+2026-06-13 10:14:18,260 - agent - INFO - middleware.py:61 - [消息 6] Tool(query_music_library): {
+  "code": 1,
+  "msg": "音乐库总计3首歌曲",
+  "song_list": [
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    }
+  ]
+}
+2026-06-13 10:14:18,260 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "code": 1,
+  "msg": "音乐库总计3首歌曲",
+  "song_list": [
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    }
+  ]
+}
+2026-06-13 10:14:55,262 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有1条消息。
+2026-06-13 10:14:55,262 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 请帮我播放这首歌吧
+2026-06-13 10:14:55,262 - agent - DEBUG - middleware.py:69 - [log_before_model]HumanMessage | 请帮我播放这首歌吧
+2026-06-13 10:14:56,959 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: query_music_library
+2026-06-13 10:14:56,959 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'keyword': ''}
+2026-06-13 10:14:56,961 - agent - INFO - middleware.py:28 - [tool monitor]工具query_music_library调用成功
+2026-06-13 10:14:57,013 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有3条消息。
+2026-06-13 10:14:57,013 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 请帮我播放这首歌吧
+2026-06-13 10:14:57,014 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 我需要先了解用户想播放哪首歌，但用户没有提供具体的歌曲名称。让我先查询音乐库看看有哪些歌曲可供选择。
+
+让我先获取一些背景信息，同时查询音乐库。
+2026-06-13 10:14:57,014 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "音乐库总计3首歌曲",
+  "song_list": [
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    }
+  ]
+}
+2026-06-13 10:14:57,014 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "code": 1,
+  "msg": "音乐库总计3首歌曲",
+  "song_list": [
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    }
+  ]
+}
+2026-06-13 10:15:15,996 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有1条消息。
+2026-06-13 10:15:15,996 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 海河
+2026-06-13 10:15:15,996 - agent - DEBUG - middleware.py:69 - [log_before_model]HumanMessage | 海河
+2026-06-13 10:15:37,135 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有1条消息。
+2026-06-13 10:15:37,135 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 情报我放一首歌
+2026-06-13 10:15:37,135 - agent - DEBUG - middleware.py:69 - [log_before_model]HumanMessage | 情报我放一首歌
+2026-06-13 10:15:38,669 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: query_music_library
+2026-06-13 10:15:38,670 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'keyword': ''}
+2026-06-13 10:15:38,671 - agent - INFO - middleware.py:28 - [tool monitor]工具query_music_library调用成功
+2026-06-13 10:15:38,723 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有3条消息。
+2026-06-13 10:15:38,723 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 情报我放一首歌
+2026-06-13 10:15:38,723 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，你想放一首歌来调节一下心情，这很棒！让我先查一下音乐库，看看有哪些适合的曲目。
+2026-06-13 10:15:38,723 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "音乐库总计3首歌曲",
+  "song_list": [
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    }
+  ]
+}
+2026-06-13 10:15:38,724 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "code": 1,
+  "msg": "音乐库总计3首歌曲",
+  "song_list": [
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    }
+  ]
+}
+2026-06-13 10:16:04,535 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有1条消息。
+2026-06-13 10:16:04,535 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 直接播放
+2026-06-13 10:16:04,535 - agent - DEBUG - middleware.py:69 - [log_before_model]HumanMessage | 直接播放
+2026-06-13 10:16:05,822 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: query_music_library
+2026-06-13 10:16:05,823 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'keyword': ''}
+2026-06-13 10:16:05,823 - agent - INFO - middleware.py:28 - [tool monitor]工具query_music_library调用成功
+2026-06-13 10:16:05,875 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有3条消息。
+2026-06-13 10:16:05,875 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 直接播放
+2026-06-13 10:16:05,876 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，我先查看一下音乐库有哪些歌曲，然后为您播放。
+2026-06-13 10:16:05,876 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "音乐库总计3首歌曲",
+  "song_list": [
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    }
+  ]
+}
+2026-06-13 10:16:05,876 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "code": 1,
+  "msg": "音乐库总计3首歌曲",
+  "song_list": [
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    }
+  ]
+}
+2026-06-13 10:16:07,087 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: play_selected_music
+2026-06-13 10:16:07,089 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'song_full_path': 'E:\\pythonProject1\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3'}
+2026-06-13 10:16:12,092 - agent - INFO - middleware.py:28 - [tool monitor]工具play_selected_music调用成功
+2026-06-13 10:16:12,144 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有5条消息。
+2026-06-13 10:16:12,144 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 直接播放
+2026-06-13 10:16:12,144 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，我先查看一下音乐库有哪些歌曲，然后为您播放。
+2026-06-13 10:16:12,144 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "音乐库总计3首歌曲",
+  "song_list": [
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    }
+  ]
+}
+2026-06-13 10:16:12,144 - agent - INFO - middleware.py:61 - [消息 4] Tool(None): 音乐库中有3首心灵疗愈类的音乐，我来为您播放第一首作为开场背景音乐。
+2026-06-13 10:16:12,145 - agent - INFO - middleware.py:61 - [消息 5] Tool(play_selected_music): {
+  "status": "error",
+  "msg": "推送播放请求失败：HTTPConnectionPool(host='127.0.0.1', port=8001): Read timed out. (read timeout=5)"
+}
+2026-06-13 10:16:12,145 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "status": "error",
+  "msg": "推送播放请求失败：HTTPConnectionPool(host='127.0.0.1', port=8001): Read timed out. (read timeout=5)"
+}
+2026-06-13 10:16:13,651 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: play_selected_music
+2026-06-13 10:16:13,652 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'song_full_path': 'E:\\pythonProject1\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3'}
+2026-06-13 10:16:18,659 - agent - INFO - middleware.py:28 - [tool monitor]工具play_selected_music调用成功
+2026-06-13 10:16:18,711 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有7条消息。
+2026-06-13 10:16:18,711 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 直接播放
+2026-06-13 10:16:18,711 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，我先查看一下音乐库有哪些歌曲，然后为您播放。
+2026-06-13 10:16:18,711 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "音乐库总计3首歌曲",
+  "song_list": [
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    }
+  ]
+}
+2026-06-13 10:16:18,711 - agent - INFO - middleware.py:61 - [消息 4] Tool(None): 音乐库中有3首心灵疗愈类的音乐，我来为您播放第一首作为开场背景音乐。
+2026-06-13 10:16:18,711 - agent - INFO - middleware.py:61 - [消息 5] Tool(play_selected_music): {
+  "status": "error",
+  "msg": "推送播放请求失败：HTTPConnectionPool(host='127.0.0.1', port=8001): Read timed out. (read timeout=5)"
+}
+2026-06-13 10:16:18,713 - agent - INFO - middleware.py:61 - [消息 6] Tool(None): 看起来第一首播放时遇到了一点网络连接问题，我换一首试试。
+2026-06-13 10:16:18,713 - agent - INFO - middleware.py:61 - [消息 7] Tool(play_selected_music): {
+  "status": "error",
+  "msg": "推送播放请求失败：HTTPConnectionPool(host='127.0.0.1', port=8001): Read timed out. (read timeout=5)"
+}
+2026-06-13 10:16:18,713 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "status": "error",
+  "msg": "推送播放请求失败：HTTPConnectionPool(host='127.0.0.1', port=8001): Read timed out. (read timeout=5)"
+}
+2026-06-13 10:16:19,955 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: play_selected_music
+2026-06-13 10:16:19,955 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'song_full_path': 'E:\\pythonProject1\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3'}
+2026-06-13 10:16:24,968 - agent - INFO - middleware.py:28 - [tool monitor]工具play_selected_music调用成功
+2026-06-13 10:16:25,020 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有9条消息。
+2026-06-13 10:16:25,020 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 直接播放
+2026-06-13 10:16:25,020 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，我先查看一下音乐库有哪些歌曲，然后为您播放。
+2026-06-13 10:16:25,020 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "音乐库总计3首歌曲",
+  "song_list": [
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\pythonProject1\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    }
+  ]
+}
+2026-06-13 10:16:25,022 - agent - INFO - middleware.py:61 - [消息 4] Tool(None): 音乐库中有3首心灵疗愈类的音乐，我来为您播放第一首作为开场背景音乐。
+2026-06-13 10:16:25,022 - agent - INFO - middleware.py:61 - [消息 5] Tool(play_selected_music): {
+  "status": "error",
+  "msg": "推送播放请求失败：HTTPConnectionPool(host='127.0.0.1', port=8001): Read timed out. (read timeout=5)"
+}
+2026-06-13 10:16:25,022 - agent - INFO - middleware.py:61 - [消息 6] Tool(None): 看起来第一首播放时遇到了一点网络连接问题，我换一首试试。
+2026-06-13 10:16:25,022 - agent - INFO - middleware.py:61 - [消息 7] Tool(play_selected_music): {
+  "status": "error",
+  "msg": "推送播放请求失败：HTTPConnectionPool(host='127.0.0.1', port=8001): Read timed out. (read timeout=5)"
+}
+2026-06-13 10:16:25,022 - agent - INFO - middleware.py:61 - [消息 8] Tool(None): 
+2026-06-13 10:16:25,022 - agent - INFO - middleware.py:61 - [消息 9] Tool(play_selected_music): {
+  "status": "error",
+  "msg": "推送播放请求失败：HTTPConnectionPool(host='127.0.0.1', port=8001): Read timed out. (read timeout=5)"
+}
+2026-06-13 10:16:25,022 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "status": "error",
+  "msg": "推送播放请求失败：HTTPConnectionPool(host='127.0.0.1', port=8001): Read timed out. (read timeout=5)"
+}
