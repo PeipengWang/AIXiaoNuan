@@ -23,6 +23,9 @@
             --radius: 18px;
             --radius-sm: 10px;
             --transition: all 0.2s ease;
+            /* 音乐控件专属色 */
+            --music-bg: #ff7979;
+            --music-hover: #e05c5c;
         }
 
         body {
@@ -131,6 +134,7 @@
             flex-direction: column;
             height: 100vh;
             min-width: 0;
+            position: relative;
         }
 
         .chat-header {
@@ -381,9 +385,41 @@
         }
         .empty-chat .icon { font-size: 56px; }
         .empty-chat p { font-size: 16px; }
+
+        /* ===================== 新增音乐悬浮控件样式 ===================== */
+        .music-float-btn {
+            position: fixed;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            border: none;
+            background: var(--music-bg);
+            color: #fff;
+            font-size: 24px;
+            box-shadow: 0 4px 12px rgba(255,121,121,0.3);
+            cursor: pointer;
+            z-index: 9;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        .music-float-btn.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        .music-float-btn:hover {
+            background: var(--music-hover);
+            transform: translateY(-50%) scale(1.05);
+        }
     </style>
 </head>
 <body>
+
+<!-- 新增音乐悬浮停止按钮 -->
+<button class="music-float-btn" id="musicStopBtn" onclick="localStopMusic()">⏹</button>
 
 <!-- Mobile menu toggle -->
 <button class="menu-toggle" onclick="toggleSidebar()" title="菜单">☰</button>
@@ -459,12 +495,22 @@ let isStreaming = false;
 // 新增：保存正在播放的音频对象
 let currentAudio = null;
 
+// ========== 新增音乐全局变量（独立TTS，互不干扰） ==========
+let musicWs = null;
+let playMusicAudio = null;
+let currentMusicPath = "";
+const MUSIC_WS_URL = "ws://127.0.0.1:9002/ws/music";
+const MUSIC_STREAM_BASE = "http://127.0.0.1:9002/api/music_stream";
+const musicStopBtn = document.getElementById("musicStopBtn");
+
 // ============================
 // Init
 // ============================
 document.addEventListener('DOMContentLoaded', () => {
     loadSessions();
     autoResizeTextarea();
+    // 页面加载初始化音乐WebSocket
+    initMusicWebSocket();
 });
 
 function autoResizeTextarea() {
@@ -718,7 +764,7 @@ function playTTS(text) {
         currentAudio = null;
     }
 
-    const ttsUrl = "http://154.8.237.182:9000/tts-stream";
+    const ttsUrl = "http://127.0.0.1:9000/tts-stream";
     const fullUrl = `${ttsUrl}?text=${encodeURIComponent(text)}`;
 
     fetch(fullUrl)
@@ -745,7 +791,7 @@ function playTTS(text) {
             };
         })
         .catch(err => {
-            console.log("TTS 接口请求失败，请检查 9000 服务是否启动", err);
+            console.log("TTS 接口请求失败，请检查 9533 服务是否启动", err);
         });
 }
 // ============================
@@ -918,6 +964,84 @@ function showToast(msg, duration = 2000) {
         el.style.opacity = '0';
         setTimeout(() => el.remove(), 300);
     }, duration);
+}
+
+// ===================== 新增音乐WebSocket与播放控制函数 =====================
+// 初始化音乐长连接
+function initMusicWebSocket() {
+    musicWs = new WebSocket(MUSIC_WS_URL);
+
+    musicWs.onopen = () => {
+        console.log("音乐WS连接成功 8006");
+    };
+
+    musicWs.onmessage = (event) => {
+        try {
+            const msg = JSON.parse(event.data);
+            switch (msg.action) {
+                case "play":
+                    // 收到播放推送：显示按钮 + 加载音频播放
+                    playMusic(msg.song_name, msg.song_path);
+                    musicStopBtn.classList.add("show");
+                    break;
+                case "stop":
+                    // 后端全局停止指令：暂停+隐藏按钮
+                    stopMusicAudio();
+                    musicStopBtn.classList.remove("show");
+                    break;
+            }
+        } catch (err) {
+            console.error("音乐消息解析失败", err);
+        }
+    };
+
+    musicWs.onclose = () => {
+        console.log("音乐WS断开，3秒重连");
+        setTimeout(initMusicWebSocket, 3000);
+    };
+
+    musicWs.onerror = () => {
+        console.error("音乐WS异常");
+    };
+}
+
+// 加载播放背景音乐
+function playMusic(songName, songPath) {
+    // 销毁上一首音乐
+    if (playMusicAudio) {
+        playMusicAudio.pause();
+        playMusicAudio.src = "";
+        URL.revokeObjectURL(playMusicAudio.src);
+        playMusicAudio = null;
+    }
+    currentMusicPath = songPath;
+    const streamUrl = `${MUSIC_STREAM_BASE}?path=${encodeURIComponent(songPath)}`;
+    playMusicAudio = new Audio(streamUrl);
+    playMusicAudio.play().catch(err => {
+        console.log("音乐播放拦截（浏览器自动播放策略）：", err);
+    });
+    // 播放结束自动隐藏按钮
+    playMusicAudio.onended = () => {
+        playMusicAudio = null;
+        musicStopBtn.classList.remove("show");
+    };
+}
+
+// 本地点击暂停音乐（仅前端本地，不上报后端）
+function localStopMusic() {
+    if (playMusicAudio) {
+        playMusicAudio.pause();
+    }
+}
+
+// 彻底销毁音乐音频
+function stopMusicAudio() {
+    if (playMusicAudio) {
+        playMusicAudio.pause();
+        playMusicAudio.src = "";
+        playMusicAudio = null;
+    }
+    currentMusicPath = "";
 }
 </script>
 

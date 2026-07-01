@@ -77,3 +77,6 @@ async def asr(file: UploadFile = File(...)):
 # 启动命令
 # uvicorn asr_server:app --host 0.0.0.0 --port 9001
 # ========================
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=9001)

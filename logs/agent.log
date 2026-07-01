@@ -508,3 +508,2356 @@
   "song_name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
   "song_path": "E:\\pythonProject1\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
 }
+2026-07-01 08:17:33,229 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有1条消息。
+2026-07-01 08:17:33,231 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 你好
+2026-07-01 08:17:33,231 - agent - DEBUG - middleware.py:69 - [log_before_model]HumanMessage | 你好
+2026-07-01 08:17:35,042 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: rag_summarize
+2026-07-01 08:17:35,042 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'query': '你好'}
+2026-07-01 08:17:38,736 - agent - INFO - middleware.py:28 - [tool monitor]工具rag_summarize调用成功
+2026-07-01 08:17:38,788 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有3条消息。
+2026-07-01 08:17:38,789 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 你好
+2026-07-01 08:17:38,789 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 你好呀～今天感觉怎么样？有什么想和我聊聊的吗？我在这里，会认真听你说。🌱
+
+让我先了解一下你的情况，这样可以更好地陪伴你。
+2026-07-01 08:17:38,789 - agent - INFO - middleware.py:61 - [消息 3] Tool(rag_summarize): 参考资料涉及两个主题：社会性病态人格的公开反应，以及情绪调节方法。
+
+**主题一：社会性病态人格的公开反应**
+
+- 时间：2011年。
+- 事件：某个体通过电视和广播媒体向大众公开其“情况”（社会性病态人格）。
+- 反应：大部分人的态度无明显变化。多数人（包括家人和朋友黛安）的反应是表示“对此并不意外”。
+
+**主题二：情绪调节技巧**
+
+- 技巧1：关注已拥有的，每日进行感恩记录。
+- 技巧2：通过向信得过的人分享羞耻感来减轻其影响，原理为“羞耻在沉默中生长，一说出就消散”。
+2026-07-01 08:17:38,789 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | 参考资料涉及两个主题：社会性病态人格的公开反应，以及情绪调节方法。
+
+**主题一：社会性病态人格的公开反应**
+
+- 时间：2011年。
+- 事件：某个体通过电视和广播媒体向大众公开其“情况”（社会性病态人格）。
+- 反应：大部分人的态度无明显变化。多数人（包括家人和朋友黛安）的反应是表示“对此并不意外”。
+
+**主题二：情绪调节技巧**
+
+- 技巧1：关注已拥有的，每日进行感恩记录。
+- 技巧2：通过向信得过的人分享羞耻感来减轻其影响，原理为“羞耻在沉默中生长，一说出就消散”。
+2026-07-01 08:18:51,490 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有1条消息。
+2026-07-01 08:18:51,491 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 你好
+2026-07-01 08:18:51,491 - agent - DEBUG - middleware.py:69 - [log_before_model]HumanMessage | 你好
+2026-07-01 08:20:06,801 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有1条消息。
+2026-07-01 08:20:06,801 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 你好
+2026-07-01 08:20:06,801 - agent - DEBUG - middleware.py:69 - [log_before_model]HumanMessage | 你好
+2026-07-01 08:20:48,042 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有1条消息。
+2026-07-01 08:20:48,042 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 帮我播放一个舒缓情绪的音乐
+2026-07-01 08:20:48,042 - agent - DEBUG - middleware.py:69 - [log_before_model]HumanMessage | 帮我播放一个舒缓情绪的音乐
+2026-07-01 08:20:49,173 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: query_music_library
+2026-07-01 08:20:49,173 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'keyword': '舒缓'}
+2026-07-01 08:20:49,175 - agent - INFO - middleware.py:28 - [tool monitor]工具query_music_library调用成功
+2026-07-01 08:20:49,227 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有3条消息。
+2026-07-01 08:20:49,227 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 帮我播放一个舒缓情绪的音乐
+2026-07-01 08:20:49,227 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，我先查一下音乐库中有哪些适合舒缓情绪的音乐，然后为你播放。
+2026-07-01 08:20:49,227 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "匹配关键词「舒缓」共0首",
+  "song_list": []
+}
+2026-07-01 08:20:49,227 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "code": 1,
+  "msg": "匹配关键词「舒缓」共0首",
+  "song_list": []
+}
+2026-07-01 08:20:50,497 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: query_music_library
+2026-07-01 08:20:50,497 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'keyword': ''}
+2026-07-01 08:20:50,498 - agent - INFO - middleware.py:28 - [tool monitor]工具query_music_library调用成功
+2026-07-01 08:20:50,550 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有5条消息。
+2026-07-01 08:20:50,550 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 帮我播放一个舒缓情绪的音乐
+2026-07-01 08:20:50,551 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，我先查一下音乐库中有哪些适合舒缓情绪的音乐，然后为你播放。
+2026-07-01 08:20:50,551 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "匹配关键词「舒缓」共0首",
+  "song_list": []
+}
+2026-07-01 08:20:50,551 - agent - INFO - middleware.py:61 - [消息 4] Tool(None): 没有直接匹配到"舒缓"关键词的音乐，我查看一下全部音乐列表，为你挑选合适的曲目。
+2026-07-01 08:20:50,551 - agent - INFO - middleware.py:61 - [消息 5] Tool(query_music_library): {
+  "code": 1,
+  "msg": "音乐库总计3首歌曲",
+  "song_list": [
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    }
+  ]
+}
+2026-07-01 08:20:50,551 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "code": 1,
+  "msg": "音乐库总计3首歌曲",
+  "song_list": [
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    }
+  ]
+}
+2026-07-01 08:20:51,906 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: play_selected_music
+2026-07-01 08:20:51,908 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'song_full_path': 'E:\\AIXiaoNuan\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3'}
+2026-07-01 08:20:51,933 - agent - INFO - middleware.py:28 - [tool monitor]工具play_selected_music调用成功
+2026-07-01 08:20:51,985 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有7条消息。
+2026-07-01 08:20:51,985 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 帮我播放一个舒缓情绪的音乐
+2026-07-01 08:20:51,985 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，我先查一下音乐库中有哪些适合舒缓情绪的音乐，然后为你播放。
+2026-07-01 08:20:51,986 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "匹配关键词「舒缓」共0首",
+  "song_list": []
+}
+2026-07-01 08:20:51,986 - agent - INFO - middleware.py:61 - [消息 4] Tool(None): 没有直接匹配到"舒缓"关键词的音乐，我查看一下全部音乐列表，为你挑选合适的曲目。
+2026-07-01 08:20:51,986 - agent - INFO - middleware.py:61 - [消息 5] Tool(query_music_library): {
+  "code": 1,
+  "msg": "音乐库总计3首歌曲",
+  "song_list": [
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    }
+  ]
+}
+2026-07-01 08:20:51,986 - agent - INFO - middleware.py:61 - [消息 6] Tool(None): 找到了！音乐库中有几首非常适合舒缓情绪的心灵疗愈音乐。我来为你播放第一首《心灵疗愈》海河，这是一首心理治疗音乐，非常适合放松心情。
+2026-07-01 08:20:51,986 - agent - INFO - middleware.py:61 - [消息 7] Tool(play_selected_music): {
+  "status": "success",
+  "msg": "已向0个前端推送播放指令",
+  "song_name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+  "song_path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+}
+2026-07-01 08:20:51,986 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "status": "success",
+  "msg": "已向0个前端推送播放指令",
+  "song_name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+  "song_path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+}
+2026-07-01 08:30:10,399 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有1条消息。
+2026-07-01 08:30:10,406 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 你好 我播放一個音樂
+2026-07-01 08:30:10,406 - agent - DEBUG - middleware.py:69 - [log_before_model]HumanMessage | 你好 我播放一個音樂
+2026-07-01 08:30:12,372 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: rag_summarize
+2026-07-01 08:30:12,372 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'query': '用户想要播放音乐，心理疏导中播放音乐的作用'}
+2026-07-01 08:30:12,373 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: query_music_library
+2026-07-01 08:30:12,374 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'keyword': ''}
+2026-07-01 08:30:12,376 - agent - INFO - middleware.py:28 - [tool monitor]工具query_music_library调用成功
+2026-07-01 08:30:15,245 - agent - INFO - middleware.py:28 - [tool monitor]工具rag_summarize调用成功
+2026-07-01 08:30:15,298 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有4条消息。
+2026-07-01 08:30:15,298 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 你好 我播放一個音樂
+2026-07-01 08:30:15,299 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的！我先从知识库获取一些背景信息，同时查询音乐库看看有哪些可用的音乐。
+2026-07-01 08:30:15,299 - agent - INFO - middleware.py:61 - [消息 3] Tool(rag_summarize): 声音调节法：哼唱节奏缓慢的歌曲、用慢语速数数、发出长音“嗡—”并感受胸腔震动、听白噪音或自然声音。
+
+情绪识别与接纳：情绪波动时可自问“我此刻的需求是什么”；对“小情绪”不压抑，允许表达“我现在不太舒服”。
+
+正念聆听：步骤为停止当前活动、闭眼、像第一次听到一样去听周围声音、不评判声音好坏、先关注最近的声音（呼吸、心跳），再扩展到房间内声音，最后扩展到窗外或远处声音。
+2026-07-01 08:30:15,299 - agent - INFO - middleware.py:61 - [消息 4] Tool(query_music_library): {
+  "code": 1,
+  "msg": "音乐库总计21首歌曲",
+  "song_list": [
+    {
+      "name": "《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3"
+    },
+    {
+      "name": "《仙剑奇缘》_宁心安神疏解郁结_焦虑烦躁心绪不宁.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《仙剑奇缘》_宁心安神疏解郁结_焦虑烦躁心绪不宁.mp3"
+    },
+    {
+      "name": "《兰香涧》_安魂入睡冥想治愈_失眠放松正念疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《兰香涧》_安魂入睡冥想治愈_失眠放松正念疗愈.mp3"
+    },
+    {
+      "name": "《养生乐羽入肾》_镇静安神缓解惊吓_脾气急躁易受惊吓心理安抚.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《养生乐羽入肾》_镇静安神缓解惊吓_脾气急躁易受惊吓心理安抚.mp3"
+    },
+    {
+      "name": "《听心》_倾听内心回归本真_心理咨询心灵对话伴奏.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《听心》_倾听内心回归本真_心理咨询心灵对话伴奏.mp3"
+    },
+    {
+      "name": "《吹梦到西洲》_解郁安神平息肝火_抑郁焦虑情绪管理疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《吹梦到西洲》_解郁安神平息肝火_抑郁焦虑情绪管理疗愈.mp3"
+    },
+    {
+      "name": "《吹箫人去玉楼空》_疏肝畅气解忧减压_抑郁忧愁心理疏导.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《吹箫人去玉楼空》_疏肝畅气解忧减压_抑郁忧愁心理疏导.mp3"
+    },
+    {
+      "name": "《墨缘》_舒心畅气缓解焦虑_焦虑紧张心理赋能.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《墨缘》_舒心畅气缓解焦虑_焦虑紧张心理赋能.mp3"
+    },
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    },
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    },
+    {
+      "name": "《梦回仙游》_宣导肺气缓解压力焦虑_压力焦虑胸闷气短.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《梦回仙游》_宣导肺气缓解压力焦虑_压力焦虑胸闷气短.mp3"
+    },
+    {
+      "name": "《欢沁》_愉悦心情活血通脉_情绪低落胸闷不畅.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《欢沁》_愉悦心情活血通脉_情绪低落胸闷不畅.mp3"
+    },
+    {
+      "name": "《水》_解郁忘忧平和心态_忧郁愁绪心理平衡.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《水》_解郁忘忧平和心态_忧郁愁绪心理平衡.mp3"
+    },
+    {
+      "name": "《浮光》_调理神志疏导血脉_心神不宁心理创伤.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《浮光》_调理神志疏导血脉_心神不宁心理创伤.mp3"
+    },
+    {
+      "name": "《涅槃》_安神助眠止梦静心_失眠多梦深度放松疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《涅槃》_安神助眠止梦静心_失眠多梦深度放松疗愈.mp3"
+    },
+    {
+      "name": "《灵气养心》_调整情绪愉悦心情_情绪低落抑郁倾向.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《灵气养心》_调整情绪愉悦心情_情绪低落抑郁倾向.mp3"
+    },
+    {
+      "name": "《紫竹调》_静心养心安神定志_心烦意乱冥想静坐.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《紫竹调》_静心养心安神定志_心烦意乱冥想静坐.mp3"
+    },
+    {
+      "name": "《观心自在》_清心宁神缓解多疑_胆小多疑失眠心理敏感.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《观心自在》_清心宁神缓解多疑_胆小多疑失眠心理敏感.mp3"
+    },
+    {
+      "name": "《鸿迹》_调节内分泌促进睡眠缓解压力_失眠压力大内分泌失调.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《鸿迹》_调节内分泌促进睡眠缓解压力_失眠压力大内分泌失调.mp3"
+    }
+  ]
+}
+2026-07-01 08:30:15,303 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "code": 1,
+  "msg": "音乐库总计21首歌曲",
+  "song_list": [
+    {
+      "name": "《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3"
+    },
+    {
+      "name": "《仙剑奇缘》_宁心安神疏解郁结_焦虑烦躁心绪不宁.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《仙剑奇缘》_宁心安神疏解郁结_焦虑烦躁心绪不宁.mp3"
+    },
+    {
+      "name": "《兰香涧》_安魂入睡冥想治愈_失眠放松正念疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《兰香涧》_安魂入睡冥想治愈_失眠放松正念疗愈.mp3"
+    },
+    {
+      "name": "《养生乐羽入肾》_镇静安神缓解惊吓_脾气急躁易受惊吓心理安抚.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《养生乐羽入肾》_镇静安神缓解惊吓_脾气急躁易受惊吓心理安抚.mp3"
+    },
+    {
+      "name": "《听心》_倾听内心回归本真_心理咨询心灵对话伴奏.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《听心》_倾听内心回归本真_心理咨询心灵对话伴奏.mp3"
+    },
+    {
+      "name": "《吹梦到西洲》_解郁安神平息肝火_抑郁焦虑情绪管理疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《吹梦到西洲》_解郁安神平息肝火_抑郁焦虑情绪管理疗愈.mp3"
+    },
+    {
+      "name": "《吹箫人去玉楼空》_疏肝畅气解忧减压_抑郁忧愁心理疏导.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《吹箫人去玉楼空》_疏肝畅气解忧减压_抑郁忧愁心理疏导.mp3"
+    },
+    {
+      "name": "《墨缘》_舒心畅气缓解焦虑_焦虑紧张心理赋能.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《墨缘》_舒心畅气缓解焦虑_焦虑紧张心理赋能.mp3"
+    },
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    },
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    },
+    {
+      "name": "《梦回仙游》_宣导肺气缓解压力焦虑_压力焦虑胸闷气短.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《梦回仙游》_宣导肺气缓解压力焦虑_压力焦虑胸闷气短.mp3"
+    },
+    {
+      "name": "《欢沁》_愉悦心情活血通脉_情绪低落胸闷不畅.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《欢沁》_愉悦心情活血通脉_情绪低落胸闷不畅.mp3"
+    },
+    {
+      "name": "《水》_解郁忘忧平和心态_忧郁愁绪心理平衡.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《水》_解郁忘忧平和心态_忧郁愁绪心理平衡.mp3"
+    },
+    {
+      "name": "《浮光》_调理神志疏导血脉_心神不宁心理创伤.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《浮光》_调理神志疏导血脉_心神不宁心理创伤.mp3"
+    },
+    {
+      "name": "《涅槃》_安神助眠止梦静心_失眠多梦深度放松疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《涅槃》_安神助眠止梦静心_失眠多梦深度放松疗愈.mp3"
+    },
+    {
+      "name": "《灵气养心》_调整情绪愉悦心情_情绪低落抑郁倾向.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《灵气养心》_调整情绪愉悦心情_情绪低落抑郁倾向.mp3"
+    },
+    {
+      "name": "《紫竹调》_静心养心安神定志_心烦意乱冥想静坐.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《紫竹调》_静心养心安神定志_心烦意乱冥想静坐.mp3"
+    },
+    {
+      "name": "《观心自在》_清心宁神缓解多疑_胆小多疑失眠心理敏感.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《观心自在》_清心宁神缓解多疑_胆小多疑失眠心理敏感.mp3"
+    },
+    {
+      "name": "《鸿迹》_调节内分泌促进睡眠缓解压力_失眠压力大内分泌失调.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《鸿迹》_调节内分泌促进睡眠缓解压力_失眠压力大内分泌失调.mp3"
+    }
+  ]
+}
+2026-07-01 08:32:50,090 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有1条消息。
+2026-07-01 08:32:50,091 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 你好，帮我播放一首舒缓情绪的音乐
+2026-07-01 08:32:50,091 - agent - DEBUG - middleware.py:69 - [log_before_model]HumanMessage | 你好，帮我播放一首舒缓情绪的音乐
+2026-07-01 08:32:51,427 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: query_music_library
+2026-07-01 08:32:51,427 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'keyword': '舒缓'}
+2026-07-01 08:32:51,428 - agent - INFO - middleware.py:28 - [tool monitor]工具query_music_library调用成功
+2026-07-01 08:32:51,480 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有3条消息。
+2026-07-01 08:32:51,480 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 你好，帮我播放一首舒缓情绪的音乐
+2026-07-01 08:32:51,482 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的！让我先查一下音乐库，看看有哪些适合舒缓情绪的音乐。
+2026-07-01 08:32:51,482 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "匹配关键词「舒缓」共1首",
+  "song_list": [
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    }
+  ]
+}
+2026-07-01 08:32:51,482 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "code": 1,
+  "msg": "匹配关键词「舒缓」共1首",
+  "song_list": [
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    }
+  ]
+}
+2026-07-01 08:32:52,730 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: play_selected_music
+2026-07-01 08:32:52,730 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'song_full_path': 'E:\\AIXiaoN暖\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3'}
+2026-07-01 08:32:52,737 - agent - INFO - middleware.py:28 - [tool monitor]工具play_selected_music调用成功
+2026-07-01 08:32:52,789 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有5条消息。
+2026-07-01 08:32:52,791 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 你好，帮我播放一首舒缓情绪的音乐
+2026-07-01 08:32:52,791 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的！让我先查一下音乐库，看看有哪些适合舒缓情绪的音乐。
+2026-07-01 08:32:52,791 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "匹配关键词「舒缓」共1首",
+  "song_list": [
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    }
+  ]
+}
+2026-07-01 08:32:52,791 - agent - INFO - middleware.py:61 - [消息 4] Tool(None): 找到了一首适合的舒缓音乐！我来为你播放它。
+2026-07-01 08:32:52,791 - agent - INFO - middleware.py:61 - [消息 5] Tool(play_selected_music): {
+  "status": "fail",
+  "msg": "文件路径不存在：E:\\AIXiaoN暖\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+}
+2026-07-01 08:32:52,791 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "status": "fail",
+  "msg": "文件路径不存在：E:\\AIXiaoN暖\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+}
+2026-07-01 08:32:53,884 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: query_music_library
+2026-07-01 08:32:53,884 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'keyword': ''}
+2026-07-01 08:32:53,885 - agent - INFO - middleware.py:28 - [tool monitor]工具query_music_library调用成功
+2026-07-01 08:32:53,938 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有7条消息。
+2026-07-01 08:32:53,939 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 你好，帮我播放一首舒缓情绪的音乐
+2026-07-01 08:32:53,939 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的！让我先查一下音乐库，看看有哪些适合舒缓情绪的音乐。
+2026-07-01 08:32:53,939 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "匹配关键词「舒缓」共1首",
+  "song_list": [
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    }
+  ]
+}
+2026-07-01 08:32:53,939 - agent - INFO - middleware.py:61 - [消息 4] Tool(None): 找到了一首适合的舒缓音乐！我来为你播放它。
+2026-07-01 08:32:53,939 - agent - INFO - middleware.py:61 - [消息 5] Tool(play_selected_music): {
+  "status": "fail",
+  "msg": "文件路径不存在：E:\\AIXiaoN暖\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+}
+2026-07-01 08:32:53,939 - agent - INFO - middleware.py:61 - [消息 6] Tool(None): 看起来路径有点出入，让我重新获取一下完整的音乐库列表，确保用准确的路径。
+2026-07-01 08:32:53,939 - agent - INFO - middleware.py:61 - [消息 7] Tool(query_music_library): {
+  "code": 1,
+  "msg": "音乐库总计21首歌曲",
+  "song_list": [
+    {
+      "name": "《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3"
+    },
+    {
+      "name": "《仙剑奇缘》_宁心安神疏解郁结_焦虑烦躁心绪不宁.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《仙剑奇缘》_宁心安神疏解郁结_焦虑烦躁心绪不宁.mp3"
+    },
+    {
+      "name": "《兰香涧》_安魂入睡冥想治愈_失眠放松正念疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《兰香涧》_安魂入睡冥想治愈_失眠放松正念疗愈.mp3"
+    },
+    {
+      "name": "《养生乐羽入肾》_镇静安神缓解惊吓_脾气急躁易受惊吓心理安抚.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《养生乐羽入肾》_镇静安神缓解惊吓_脾气急躁易受惊吓心理安抚.mp3"
+    },
+    {
+      "name": "《听心》_倾听内心回归本真_心理咨询心灵对话伴奏.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《听心》_倾听内心回归本真_心理咨询心灵对话伴奏.mp3"
+    },
+    {
+      "name": "《吹梦到西洲》_解郁安神平息肝火_抑郁焦虑情绪管理疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《吹梦到西洲》_解郁安神平息肝火_抑郁焦虑情绪管理疗愈.mp3"
+    },
+    {
+      "name": "《吹箫人去玉楼空》_疏肝畅气解忧减压_抑郁忧愁心理疏导.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《吹箫人去玉楼空》_疏肝畅气解忧减压_抑郁忧愁心理疏导.mp3"
+    },
+    {
+      "name": "《墨缘》_舒心畅气缓解焦虑_焦虑紧张心理赋能.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《墨缘》_舒心畅气缓解焦虑_焦虑紧张心理赋能.mp3"
+    },
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    },
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    },
+    {
+      "name": "《梦回仙游》_宣导肺气缓解压力焦虑_压力焦虑胸闷气短.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《梦回仙游》_宣导肺气缓解压力焦虑_压力焦虑胸闷气短.mp3"
+    },
+    {
+      "name": "《欢沁》_愉悦心情活血通脉_情绪低落胸闷不畅.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《欢沁》_愉悦心情活血通脉_情绪低落胸闷不畅.mp3"
+    },
+    {
+      "name": "《水》_解郁忘忧平和心态_忧郁愁绪心理平衡.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《水》_解郁忘忧平和心态_忧郁愁绪心理平衡.mp3"
+    },
+    {
+      "name": "《浮光》_调理神志疏导血脉_心神不宁心理创伤.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《浮光》_调理神志疏导血脉_心神不宁心理创伤.mp3"
+    },
+    {
+      "name": "《涅槃》_安神助眠止梦静心_失眠多梦深度放松疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《涅槃》_安神助眠止梦静心_失眠多梦深度放松疗愈.mp3"
+    },
+    {
+      "name": "《灵气养心》_调整情绪愉悦心情_情绪低落抑郁倾向.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《灵气养心》_调整情绪愉悦心情_情绪低落抑郁倾向.mp3"
+    },
+    {
+      "name": "《紫竹调》_静心养心安神定志_心烦意乱冥想静坐.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《紫竹调》_静心养心安神定志_心烦意乱冥想静坐.mp3"
+    },
+    {
+      "name": "《观心自在》_清心宁神缓解多疑_胆小多疑失眠心理敏感.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《观心自在》_清心宁神缓解多疑_胆小多疑失眠心理敏感.mp3"
+    },
+    {
+      "name": "《鸿迹》_调节内分泌促进睡眠缓解压力_失眠压力大内分泌失调.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《鸿迹》_调节内分泌促进睡眠缓解压力_失眠压力大内分泌失调.mp3"
+    }
+  ]
+}
+2026-07-01 08:32:53,952 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "code": 1,
+  "msg": "音乐库总计21首歌曲",
+  "song_list": [
+    {
+      "name": "《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3"
+    },
+    {
+      "name": "《仙剑奇缘》_宁心安神疏解郁结_焦虑烦躁心绪不宁.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《仙剑奇缘》_宁心安神疏解郁结_焦虑烦躁心绪不宁.mp3"
+    },
+    {
+      "name": "《兰香涧》_安魂入睡冥想治愈_失眠放松正念疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《兰香涧》_安魂入睡冥想治愈_失眠放松正念疗愈.mp3"
+    },
+    {
+      "name": "《养生乐羽入肾》_镇静安神缓解惊吓_脾气急躁易受惊吓心理安抚.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《养生乐羽入肾》_镇静安神缓解惊吓_脾气急躁易受惊吓心理安抚.mp3"
+    },
+    {
+      "name": "《听心》_倾听内心回归本真_心理咨询心灵对话伴奏.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《听心》_倾听内心回归本真_心理咨询心灵对话伴奏.mp3"
+    },
+    {
+      "name": "《吹梦到西洲》_解郁安神平息肝火_抑郁焦虑情绪管理疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《吹梦到西洲》_解郁安神平息肝火_抑郁焦虑情绪管理疗愈.mp3"
+    },
+    {
+      "name": "《吹箫人去玉楼空》_疏肝畅气解忧减压_抑郁忧愁心理疏导.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《吹箫人去玉楼空》_疏肝畅气解忧减压_抑郁忧愁心理疏导.mp3"
+    },
+    {
+      "name": "《墨缘》_舒心畅气缓解焦虑_焦虑紧张心理赋能.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《墨缘》_舒心畅气缓解焦虑_焦虑紧张心理赋能.mp3"
+    },
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    },
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    },
+    {
+      "name": "《梦回仙游》_宣导肺气缓解压力焦虑_压力焦虑胸闷气短.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《梦回仙游》_宣导肺气缓解压力焦虑_压力焦虑胸闷气短.mp3"
+    },
+    {
+      "name": "《欢沁》_愉悦心情活血通脉_情绪低落胸闷不畅.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《欢沁》_愉悦心情活血通脉_情绪低落胸闷不畅.mp3"
+    },
+    {
+      "name": "《水》_解郁忘忧平和心态_忧郁愁绪心理平衡.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《水》_解郁忘忧平和心态_忧郁愁绪心理平衡.mp3"
+    },
+    {
+      "name": "《浮光》_调理神志疏导血脉_心神不宁心理创伤.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《浮光》_调理神志疏导血脉_心神不宁心理创伤.mp3"
+    },
+    {
+      "name": "《涅槃》_安神助眠止梦静心_失眠多梦深度放松疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《涅槃》_安神助眠止梦静心_失眠多梦深度放松疗愈.mp3"
+    },
+    {
+      "name": "《灵气养心》_调整情绪愉悦心情_情绪低落抑郁倾向.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《灵气养心》_调整情绪愉悦心情_情绪低落抑郁倾向.mp3"
+    },
+    {
+      "name": "《紫竹调》_静心养心安神定志_心烦意乱冥想静坐.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《紫竹调》_静心养心安神定志_心烦意乱冥想静坐.mp3"
+    },
+    {
+      "name": "《观心自在》_清心宁神缓解多疑_胆小多疑失眠心理敏感.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《观心自在》_清心宁神缓解多疑_胆小多疑失眠心理敏感.mp3"
+    },
+    {
+      "name": "《鸿迹》_调节内分泌促进睡眠缓解压力_失眠压力大内分泌失调.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《鸿迹》_调节内分泌促进睡眠缓解压力_失眠压力大内分泌失调.mp3"
+    }
+  ]
+}
+2026-07-01 08:32:55,275 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: play_selected_music
+2026-07-01 08:32:55,275 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'song_full_path': 'E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3'}
+2026-07-01 08:32:55,280 - agent - INFO - middleware.py:28 - [tool monitor]工具play_selected_music调用成功
+2026-07-01 08:32:55,333 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有9条消息。
+2026-07-01 08:32:55,333 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 你好，帮我播放一首舒缓情绪的音乐
+2026-07-01 08:32:55,333 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的！让我先查一下音乐库，看看有哪些适合舒缓情绪的音乐。
+2026-07-01 08:32:55,334 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "匹配关键词「舒缓」共1首",
+  "song_list": [
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    }
+  ]
+}
+2026-07-01 08:32:55,334 - agent - INFO - middleware.py:61 - [消息 4] Tool(None): 找到了一首适合的舒缓音乐！我来为你播放它。
+2026-07-01 08:32:55,334 - agent - INFO - middleware.py:61 - [消息 5] Tool(play_selected_music): {
+  "status": "fail",
+  "msg": "文件路径不存在：E:\\AIXiaoN暖\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+}
+2026-07-01 08:32:55,334 - agent - INFO - middleware.py:61 - [消息 6] Tool(None): 看起来路径有点出入，让我重新获取一下完整的音乐库列表，确保用准确的路径。
+2026-07-01 08:32:55,334 - agent - INFO - middleware.py:61 - [消息 7] Tool(query_music_library): {
+  "code": 1,
+  "msg": "音乐库总计21首歌曲",
+  "song_list": [
+    {
+      "name": "《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3"
+    },
+    {
+      "name": "《仙剑奇缘》_宁心安神疏解郁结_焦虑烦躁心绪不宁.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《仙剑奇缘》_宁心安神疏解郁结_焦虑烦躁心绪不宁.mp3"
+    },
+    {
+      "name": "《兰香涧》_安魂入睡冥想治愈_失眠放松正念疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《兰香涧》_安魂入睡冥想治愈_失眠放松正念疗愈.mp3"
+    },
+    {
+      "name": "《养生乐羽入肾》_镇静安神缓解惊吓_脾气急躁易受惊吓心理安抚.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《养生乐羽入肾》_镇静安神缓解惊吓_脾气急躁易受惊吓心理安抚.mp3"
+    },
+    {
+      "name": "《听心》_倾听内心回归本真_心理咨询心灵对话伴奏.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《听心》_倾听内心回归本真_心理咨询心灵对话伴奏.mp3"
+    },
+    {
+      "name": "《吹梦到西洲》_解郁安神平息肝火_抑郁焦虑情绪管理疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《吹梦到西洲》_解郁安神平息肝火_抑郁焦虑情绪管理疗愈.mp3"
+    },
+    {
+      "name": "《吹箫人去玉楼空》_疏肝畅气解忧减压_抑郁忧愁心理疏导.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《吹箫人去玉楼空》_疏肝畅气解忧减压_抑郁忧愁心理疏导.mp3"
+    },
+    {
+      "name": "《墨缘》_舒心畅气缓解焦虑_焦虑紧张心理赋能.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《墨缘》_舒心畅气缓解焦虑_焦虑紧张心理赋能.mp3"
+    },
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    },
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    },
+    {
+      "name": "《梦回仙游》_宣导肺气缓解压力焦虑_压力焦虑胸闷气短.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《梦回仙游》_宣导肺气缓解压力焦虑_压力焦虑胸闷气短.mp3"
+    },
+    {
+      "name": "《欢沁》_愉悦心情活血通脉_情绪低落胸闷不畅.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《欢沁》_愉悦心情活血通脉_情绪低落胸闷不畅.mp3"
+    },
+    {
+      "name": "《水》_解郁忘忧平和心态_忧郁愁绪心理平衡.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《水》_解郁忘忧平和心态_忧郁愁绪心理平衡.mp3"
+    },
+    {
+      "name": "《浮光》_调理神志疏导血脉_心神不宁心理创伤.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《浮光》_调理神志疏导血脉_心神不宁心理创伤.mp3"
+    },
+    {
+      "name": "《涅槃》_安神助眠止梦静心_失眠多梦深度放松疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《涅槃》_安神助眠止梦静心_失眠多梦深度放松疗愈.mp3"
+    },
+    {
+      "name": "《灵气养心》_调整情绪愉悦心情_情绪低落抑郁倾向.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《灵气养心》_调整情绪愉悦心情_情绪低落抑郁倾向.mp3"
+    },
+    {
+      "name": "《紫竹调》_静心养心安神定志_心烦意乱冥想静坐.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《紫竹调》_静心养心安神定志_心烦意乱冥想静坐.mp3"
+    },
+    {
+      "name": "《观心自在》_清心宁神缓解多疑_胆小多疑失眠心理敏感.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《观心自在》_清心宁神缓解多疑_胆小多疑失眠心理敏感.mp3"
+    },
+    {
+      "name": "《鸿迹》_调节内分泌促进睡眠缓解压力_失眠压力大内分泌失调.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《鸿迹》_调节内分泌促进睡眠缓解压力_失眠压力大内分泌失调.mp3"
+    }
+  ]
+}
+2026-07-01 08:32:55,342 - agent - INFO - middleware.py:61 - [消息 8] Tool(None): 好的，找到了！让我用准确的路径来播放这首舒缓的《无羁》。
+2026-07-01 08:32:55,342 - agent - INFO - middleware.py:61 - [消息 9] Tool(play_selected_music): {
+  "status": "success",
+  "msg": "已向0个前端推送播放指令",
+  "song_name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+  "song_path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+}
+2026-07-01 08:32:55,342 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "status": "success",
+  "msg": "已向0个前端推送播放指令",
+  "song_name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+  "song_path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+}
+2026-07-01 08:35:06,963 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有1条消息。
+2026-07-01 08:35:06,963 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 请帮我播放一首舒缓情绪的音乐
+2026-07-01 08:35:06,963 - agent - DEBUG - middleware.py:69 - [log_before_model]HumanMessage | 请帮我播放一首舒缓情绪的音乐
+2026-07-01 08:35:08,140 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: query_music_library
+2026-07-01 08:35:08,140 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'keyword': '舒缓'}
+2026-07-01 08:35:08,141 - agent - INFO - middleware.py:28 - [tool monitor]工具query_music_library调用成功
+2026-07-01 08:35:08,193 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有3条消息。
+2026-07-01 08:35:08,194 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 请帮我播放一首舒缓情绪的音乐
+2026-07-01 08:35:08,194 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，我先查看一下音乐库中有哪些适合舒缓情绪的音乐。
+2026-07-01 08:35:08,194 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "匹配关键词「舒缓」共1首",
+  "song_list": [
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    }
+  ]
+}
+2026-07-01 08:35:08,194 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "code": 1,
+  "msg": "匹配关键词「舒缓」共1首",
+  "song_list": [
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    }
+  ]
+}
+2026-07-01 08:35:09,568 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: play_selected_music
+2026-07-01 08:35:09,568 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'song_full_path': 'E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3'}
+2026-07-01 08:35:09,576 - agent - INFO - middleware.py:28 - [tool monitor]工具play_selected_music调用成功
+2026-07-01 08:35:09,628 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有5条消息。
+2026-07-01 08:35:09,628 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 请帮我播放一首舒缓情绪的音乐
+2026-07-01 08:35:09,628 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，我先查看一下音乐库中有哪些适合舒缓情绪的音乐。
+2026-07-01 08:35:09,628 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "匹配关键词「舒缓」共1首",
+  "song_list": [
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    }
+  ]
+}
+2026-07-01 08:35:09,628 - agent - INFO - middleware.py:61 - [消息 4] Tool(None): 找到了一首适合舒缓情绪的音乐——《无羁》，这是一首有助于镇静舒缓、缓解压力的曲子。我来为你播放。
+2026-07-01 08:35:09,628 - agent - INFO - middleware.py:61 - [消息 5] Tool(play_selected_music): {
+  "status": "success",
+  "msg": "已向0个前端推送播放指令",
+  "song_name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+  "song_path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+}
+2026-07-01 08:35:09,628 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "status": "success",
+  "msg": "已向0个前端推送播放指令",
+  "song_name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+  "song_path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+}
+2026-07-01 08:38:11,531 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有1条消息。
+2026-07-01 08:38:11,531 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 你好
+2026-07-01 08:38:11,531 - agent - DEBUG - middleware.py:69 - [log_before_model]HumanMessage | 你好
+2026-07-01 08:44:29,673 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有1条消息。
+2026-07-01 08:44:29,673 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 你好，帮我播放一首舒缓情绪的音乐
+2026-07-01 08:44:29,673 - agent - DEBUG - middleware.py:69 - [log_before_model]HumanMessage | 你好，帮我播放一首舒缓情绪的音乐
+2026-07-01 08:44:30,919 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: query_music_library
+2026-07-01 08:44:30,920 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'keyword': '舒缓'}
+2026-07-01 08:44:30,922 - agent - INFO - middleware.py:28 - [tool monitor]工具query_music_library调用成功
+2026-07-01 08:44:30,973 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有3条消息。
+2026-07-01 08:44:30,974 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 你好，帮我播放一首舒缓情绪的音乐
+2026-07-01 08:44:30,974 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，我先查询一下音乐库中有哪些适合舒缓情绪的歌曲。
+2026-07-01 08:44:30,974 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "匹配关键词「舒缓」共1首",
+  "song_list": [
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    }
+  ]
+}
+2026-07-01 08:44:30,974 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "code": 1,
+  "msg": "匹配关键词「舒缓」共1首",
+  "song_list": [
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    }
+  ]
+}
+2026-07-01 08:44:32,628 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: play_selected_music
+2026-07-01 08:44:32,628 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'song_full_path': 'E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3'}
+2026-07-01 08:44:32,634 - agent - INFO - middleware.py:28 - [tool monitor]工具play_selected_music调用成功
+2026-07-01 08:44:32,686 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有5条消息。
+2026-07-01 08:44:32,687 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 你好，帮我播放一首舒缓情绪的音乐
+2026-07-01 08:44:32,687 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，我先查询一下音乐库中有哪些适合舒缓情绪的歌曲。
+2026-07-01 08:44:32,687 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "匹配关键词「舒缓」共1首",
+  "song_list": [
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    }
+  ]
+}
+2026-07-01 08:44:32,687 - agent - INFO - middleware.py:61 - [消息 4] Tool(None): 找到了一首适合的舒缓音乐，我来为您播放这首《无羁》——它有助于镇静放松、缓解压力。我先推送播放，请您稍等~
+2026-07-01 08:44:32,687 - agent - INFO - middleware.py:61 - [消息 5] Tool(play_selected_music): {
+  "status": "success",
+  "msg": "已向0个前端推送播放指令",
+  "song_name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+  "song_path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+}
+2026-07-01 08:44:32,687 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "status": "success",
+  "msg": "已向0个前端推送播放指令",
+  "song_name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+  "song_path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+}
+2026-07-01 08:44:47,689 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有1条消息。
+2026-07-01 08:44:47,690 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 你好帮我播放一首舒缓情绪的音乐
+2026-07-01 08:44:47,690 - agent - DEBUG - middleware.py:69 - [log_before_model]HumanMessage | 你好帮我播放一首舒缓情绪的音乐
+2026-07-01 08:44:49,098 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: query_music_library
+2026-07-01 08:44:49,098 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'keyword': '舒缓'}
+2026-07-01 08:44:49,100 - agent - INFO - middleware.py:28 - [tool monitor]工具query_music_library调用成功
+2026-07-01 08:44:49,152 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有3条消息。
+2026-07-01 08:44:49,153 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 你好帮我播放一首舒缓情绪的音乐
+2026-07-01 08:44:49,153 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，我先查一下音乐库中有什么适合舒缓情绪的轻音乐，同时也了解一下你的状态。
+
+让我先获取音乐库的信息。
+2026-07-01 08:44:49,153 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "匹配关键词「舒缓」共1首",
+  "song_list": [
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    }
+  ]
+}
+2026-07-01 08:44:49,153 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "code": 1,
+  "msg": "匹配关键词「舒缓」共1首",
+  "song_list": [
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    }
+  ]
+}
+2026-07-01 08:44:50,542 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: play_selected_music
+2026-07-01 08:44:50,543 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'song_full_path': 'E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3'}
+2026-07-01 08:44:50,547 - agent - INFO - middleware.py:28 - [tool monitor]工具play_selected_music调用成功
+2026-07-01 08:44:50,599 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有5条消息。
+2026-07-01 08:44:50,600 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 你好帮我播放一首舒缓情绪的音乐
+2026-07-01 08:44:50,600 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，我先查一下音乐库中有什么适合舒缓情绪的轻音乐，同时也了解一下你的状态。
+
+让我先获取音乐库的信息。
+2026-07-01 08:44:50,600 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "匹配关键词「舒缓」共1首",
+  "song_list": [
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    }
+  ]
+}
+2026-07-01 08:44:50,600 - agent - INFO - middleware.py:61 - [消息 4] Tool(None): 找到了一首适合舒缓情绪的歌曲——《无羁》，这首曲子有助于镇静放松、缓解压力。现在为你播放，好吗？
+2026-07-01 08:44:50,600 - agent - INFO - middleware.py:61 - [消息 5] Tool(play_selected_music): {
+  "status": "success",
+  "msg": "已向0个前端推送播放指令",
+  "song_name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+  "song_path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+}
+2026-07-01 08:44:50,600 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "status": "success",
+  "msg": "已向0个前端推送播放指令",
+  "song_name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+  "song_path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+}
+2026-07-01 08:45:26,885 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有1条消息。
+2026-07-01 08:45:26,886 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 你好
+2026-07-01 08:45:26,886 - agent - DEBUG - middleware.py:69 - [log_before_model]HumanMessage | 你好
+2026-07-01 08:48:29,997 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有1条消息。
+2026-07-01 08:48:29,997 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 请帮我播放一首音乐舒缓情绪
+2026-07-01 08:48:29,998 - agent - DEBUG - middleware.py:69 - [log_before_model]HumanMessage | 请帮我播放一首音乐舒缓情绪
+2026-07-01 08:48:31,932 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: emotion_analysis
+2026-07-01 08:48:31,932 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'text': '请帮我播放一首音乐舒缓情绪'}
+2026-07-01 08:48:31,934 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: query_music_library
+2026-07-01 08:48:31,934 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'keyword': '舒缓'}
+2026-07-01 08:48:31,936 - agent - INFO - middleware.py:28 - [tool monitor]工具query_music_library调用成功
+2026-07-01 08:48:32,698 - agent - INFO - middleware.py:28 - [tool monitor]工具emotion_analysis调用成功
+2026-07-01 08:48:32,750 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有4条消息。
+2026-07-01 08:48:32,750 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 请帮我播放一首音乐舒缓情绪
+2026-07-01 08:48:32,750 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，我先了解一下你的情况，同时查询一下音乐库，为你挑选合适的舒缓音乐。
+
+让我先获取一些信息。
+2026-07-01 08:48:32,751 - agent - INFO - middleware.py:61 - [消息 3] Tool(emotion_analysis): {"emotion": "平静", "intensity": "轻度"}
+2026-07-01 08:48:32,751 - agent - INFO - middleware.py:61 - [消息 4] Tool(query_music_library): {
+  "code": 1,
+  "msg": "匹配关键词「舒缓」共1首",
+  "song_list": [
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    }
+  ]
+}
+2026-07-01 08:48:32,751 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "code": 1,
+  "msg": "匹配关键词「舒缓」共1首",
+  "song_list": [
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    }
+  ]
+}
+2026-07-01 08:48:34,353 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: play_selected_music
+2026-07-01 08:48:34,353 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'song_full_path': 'E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3'}
+2026-07-01 08:48:34,358 - agent - INFO - middleware.py:28 - [tool monitor]工具play_selected_music调用成功
+2026-07-01 08:48:34,410 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有6条消息。
+2026-07-01 08:48:34,410 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 请帮我播放一首音乐舒缓情绪
+2026-07-01 08:48:34,410 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，我先了解一下你的情况，同时查询一下音乐库，为你挑选合适的舒缓音乐。
+
+让我先获取一些信息。
+2026-07-01 08:48:34,410 - agent - INFO - middleware.py:61 - [消息 3] Tool(emotion_analysis): {"emotion": "平静", "intensity": "轻度"}
+2026-07-01 08:48:34,412 - agent - INFO - middleware.py:61 - [消息 4] Tool(query_music_library): {
+  "code": 1,
+  "msg": "匹配关键词「舒缓」共1首",
+  "song_list": [
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    }
+  ]
+}
+2026-07-01 08:48:34,412 - agent - INFO - middleware.py:61 - [消息 5] Tool(None): 看起来你现在处于一种需要放松和舒缓的状态，情绪偏向平静。我找到了一首适合你的音乐——《无羁》，这是一首舒缓压力、帮助放松的曲子。
+
+让我为你播放这首音乐：
+2026-07-01 08:48:34,412 - agent - INFO - middleware.py:61 - [消息 6] Tool(play_selected_music): {
+  "detail": "Not Found"
+}
+2026-07-01 08:48:34,412 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "detail": "Not Found"
+}
+2026-07-01 08:48:35,773 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: query_music_library
+2026-07-01 08:48:35,774 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'keyword': ''}
+2026-07-01 08:48:35,774 - agent - INFO - middleware.py:28 - [tool monitor]工具query_music_library调用成功
+2026-07-01 08:48:35,827 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有8条消息。
+2026-07-01 08:48:35,827 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 请帮我播放一首音乐舒缓情绪
+2026-07-01 08:48:35,827 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，我先了解一下你的情况，同时查询一下音乐库，为你挑选合适的舒缓音乐。
+
+让我先获取一些信息。
+2026-07-01 08:48:35,827 - agent - INFO - middleware.py:61 - [消息 3] Tool(emotion_analysis): {"emotion": "平静", "intensity": "轻度"}
+2026-07-01 08:48:35,828 - agent - INFO - middleware.py:61 - [消息 4] Tool(query_music_library): {
+  "code": 1,
+  "msg": "匹配关键词「舒缓」共1首",
+  "song_list": [
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    }
+  ]
+}
+2026-07-01 08:48:35,828 - agent - INFO - middleware.py:61 - [消息 5] Tool(None): 看起来你现在处于一种需要放松和舒缓的状态，情绪偏向平静。我找到了一首适合你的音乐——《无羁》，这是一首舒缓压力、帮助放松的曲子。
+
+让我为你播放这首音乐：
+2026-07-01 08:48:35,828 - agent - INFO - middleware.py:61 - [消息 6] Tool(play_selected_music): {
+  "detail": "Not Found"
+}
+2026-07-01 08:48:35,828 - agent - INFO - middleware.py:61 - [消息 7] Tool(None): 看起来路径上遇到了一点小问题，让我重新获取一下完整的音乐列表，再为你挑选合适的曲目。
+2026-07-01 08:48:35,828 - agent - INFO - middleware.py:61 - [消息 8] Tool(query_music_library): {
+  "code": 1,
+  "msg": "音乐库总计21首歌曲",
+  "song_list": [
+    {
+      "name": "《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3"
+    },
+    {
+      "name": "《仙剑奇缘》_宁心安神疏解郁结_焦虑烦躁心绪不宁.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《仙剑奇缘》_宁心安神疏解郁结_焦虑烦躁心绪不宁.mp3"
+    },
+    {
+      "name": "《兰香涧》_安魂入睡冥想治愈_失眠放松正念疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《兰香涧》_安魂入睡冥想治愈_失眠放松正念疗愈.mp3"
+    },
+    {
+      "name": "《养生乐羽入肾》_镇静安神缓解惊吓_脾气急躁易受惊吓心理安抚.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《养生乐羽入肾》_镇静安神缓解惊吓_脾气急躁易受惊吓心理安抚.mp3"
+    },
+    {
+      "name": "《听心》_倾听内心回归本真_心理咨询心灵对话伴奏.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《听心》_倾听内心回归本真_心理咨询心灵对话伴奏.mp3"
+    },
+    {
+      "name": "《吹梦到西洲》_解郁安神平息肝火_抑郁焦虑情绪管理疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《吹梦到西洲》_解郁安神平息肝火_抑郁焦虑情绪管理疗愈.mp3"
+    },
+    {
+      "name": "《吹箫人去玉楼空》_疏肝畅气解忧减压_抑郁忧愁心理疏导.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《吹箫人去玉楼空》_疏肝畅气解忧减压_抑郁忧愁心理疏导.mp3"
+    },
+    {
+      "name": "《墨缘》_舒心畅气缓解焦虑_焦虑紧张心理赋能.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《墨缘》_舒心畅气缓解焦虑_焦虑紧张心理赋能.mp3"
+    },
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    },
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    },
+    {
+      "name": "《梦回仙游》_宣导肺气缓解压力焦虑_压力焦虑胸闷气短.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《梦回仙游》_宣导肺气缓解压力焦虑_压力焦虑胸闷气短.mp3"
+    },
+    {
+      "name": "《欢沁》_愉悦心情活血通脉_情绪低落胸闷不畅.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《欢沁》_愉悦心情活血通脉_情绪低落胸闷不畅.mp3"
+    },
+    {
+      "name": "《水》_解郁忘忧平和心态_忧郁愁绪心理平衡.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《水》_解郁忘忧平和心态_忧郁愁绪心理平衡.mp3"
+    },
+    {
+      "name": "《浮光》_调理神志疏导血脉_心神不宁心理创伤.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《浮光》_调理神志疏导血脉_心神不宁心理创伤.mp3"
+    },
+    {
+      "name": "《涅槃》_安神助眠止梦静心_失眠多梦深度放松疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《涅槃》_安神助眠止梦静心_失眠多梦深度放松疗愈.mp3"
+    },
+    {
+      "name": "《灵气养心》_调整情绪愉悦心情_情绪低落抑郁倾向.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《灵气养心》_调整情绪愉悦心情_情绪低落抑郁倾向.mp3"
+    },
+    {
+      "name": "《紫竹调》_静心养心安神定志_心烦意乱冥想静坐.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《紫竹调》_静心养心安神定志_心烦意乱冥想静坐.mp3"
+    },
+    {
+      "name": "《观心自在》_清心宁神缓解多疑_胆小多疑失眠心理敏感.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《观心自在》_清心宁神缓解多疑_胆小多疑失眠心理敏感.mp3"
+    },
+    {
+      "name": "《鸿迹》_调节内分泌促进睡眠缓解压力_失眠压力大内分泌失调.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《鸿迹》_调节内分泌促进睡眠缓解压力_失眠压力大内分泌失调.mp3"
+    }
+  ]
+}
+2026-07-01 08:48:35,832 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "code": 1,
+  "msg": "音乐库总计21首歌曲",
+  "song_list": [
+    {
+      "name": "《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3"
+    },
+    {
+      "name": "《仙剑奇缘》_宁心安神疏解郁结_焦虑烦躁心绪不宁.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《仙剑奇缘》_宁心安神疏解郁结_焦虑烦躁心绪不宁.mp3"
+    },
+    {
+      "name": "《兰香涧》_安魂入睡冥想治愈_失眠放松正念疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《兰香涧》_安魂入睡冥想治愈_失眠放松正念疗愈.mp3"
+    },
+    {
+      "name": "《养生乐羽入肾》_镇静安神缓解惊吓_脾气急躁易受惊吓心理安抚.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《养生乐羽入肾》_镇静安神缓解惊吓_脾气急躁易受惊吓心理安抚.mp3"
+    },
+    {
+      "name": "《听心》_倾听内心回归本真_心理咨询心灵对话伴奏.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《听心》_倾听内心回归本真_心理咨询心灵对话伴奏.mp3"
+    },
+    {
+      "name": "《吹梦到西洲》_解郁安神平息肝火_抑郁焦虑情绪管理疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《吹梦到西洲》_解郁安神平息肝火_抑郁焦虑情绪管理疗愈.mp3"
+    },
+    {
+      "name": "《吹箫人去玉楼空》_疏肝畅气解忧减压_抑郁忧愁心理疏导.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《吹箫人去玉楼空》_疏肝畅气解忧减压_抑郁忧愁心理疏导.mp3"
+    },
+    {
+      "name": "《墨缘》_舒心畅气缓解焦虑_焦虑紧张心理赋能.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《墨缘》_舒心畅气缓解焦虑_焦虑紧张心理赋能.mp3"
+    },
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    },
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    },
+    {
+      "name": "《梦回仙游》_宣导肺气缓解压力焦虑_压力焦虑胸闷气短.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《梦回仙游》_宣导肺气缓解压力焦虑_压力焦虑胸闷气短.mp3"
+    },
+    {
+      "name": "《欢沁》_愉悦心情活血通脉_情绪低落胸闷不畅.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《欢沁》_愉悦心情活血通脉_情绪低落胸闷不畅.mp3"
+    },
+    {
+      "name": "《水》_解郁忘忧平和心态_忧郁愁绪心理平衡.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《水》_解郁忘忧平和心态_忧郁愁绪心理平衡.mp3"
+    },
+    {
+      "name": "《浮光》_调理神志疏导血脉_心神不宁心理创伤.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《浮光》_调理神志疏导血脉_心神不宁心理创伤.mp3"
+    },
+    {
+      "name": "《涅槃》_安神助眠止梦静心_失眠多梦深度放松疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《涅槃》_安神助眠止梦静心_失眠多梦深度放松疗愈.mp3"
+    },
+    {
+      "name": "《灵气养心》_调整情绪愉悦心情_情绪低落抑郁倾向.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《灵气养心》_调整情绪愉悦心情_情绪低落抑郁倾向.mp3"
+    },
+    {
+      "name": "《紫竹调》_静心养心安神定志_心烦意乱冥想静坐.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《紫竹调》_静心养心安神定志_心烦意乱冥想静坐.mp3"
+    },
+    {
+      "name": "《观心自在》_清心宁神缓解多疑_胆小多疑失眠心理敏感.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《观心自在》_清心宁神缓解多疑_胆小多疑失眠心理敏感.mp3"
+    },
+    {
+      "name": "《鸿迹》_调节内分泌促进睡眠缓解压力_失眠压力大内分泌失调.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《鸿迹》_调节内分泌促进睡眠缓解压力_失眠压力大内分泌失调.mp3"
+    }
+  ]
+}
+2026-07-01 08:48:37,230 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: play_selected_music
+2026-07-01 08:48:37,230 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'song_full_path': 'E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3'}
+2026-07-01 08:48:37,234 - agent - INFO - middleware.py:28 - [tool monitor]工具play_selected_music调用成功
+2026-07-01 08:48:37,286 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有10条消息。
+2026-07-01 08:48:37,286 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 请帮我播放一首音乐舒缓情绪
+2026-07-01 08:48:37,286 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，我先了解一下你的情况，同时查询一下音乐库，为你挑选合适的舒缓音乐。
+
+让我先获取一些信息。
+2026-07-01 08:48:37,286 - agent - INFO - middleware.py:61 - [消息 3] Tool(emotion_analysis): {"emotion": "平静", "intensity": "轻度"}
+2026-07-01 08:48:37,286 - agent - INFO - middleware.py:61 - [消息 4] Tool(query_music_library): {
+  "code": 1,
+  "msg": "匹配关键词「舒缓」共1首",
+  "song_list": [
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    }
+  ]
+}
+2026-07-01 08:48:37,287 - agent - INFO - middleware.py:61 - [消息 5] Tool(None): 看起来你现在处于一种需要放松和舒缓的状态，情绪偏向平静。我找到了一首适合你的音乐——《无羁》，这是一首舒缓压力、帮助放松的曲子。
+
+让我为你播放这首音乐：
+2026-07-01 08:48:37,287 - agent - INFO - middleware.py:61 - [消息 6] Tool(play_selected_music): {
+  "detail": "Not Found"
+}
+2026-07-01 08:48:37,287 - agent - INFO - middleware.py:61 - [消息 7] Tool(None): 看起来路径上遇到了一点小问题，让我重新获取一下完整的音乐列表，再为你挑选合适的曲目。
+2026-07-01 08:48:37,287 - agent - INFO - middleware.py:61 - [消息 8] Tool(query_music_library): {
+  "code": 1,
+  "msg": "音乐库总计21首歌曲",
+  "song_list": [
+    {
+      "name": "《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3"
+    },
+    {
+      "name": "《仙剑奇缘》_宁心安神疏解郁结_焦虑烦躁心绪不宁.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《仙剑奇缘》_宁心安神疏解郁结_焦虑烦躁心绪不宁.mp3"
+    },
+    {
+      "name": "《兰香涧》_安魂入睡冥想治愈_失眠放松正念疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《兰香涧》_安魂入睡冥想治愈_失眠放松正念疗愈.mp3"
+    },
+    {
+      "name": "《养生乐羽入肾》_镇静安神缓解惊吓_脾气急躁易受惊吓心理安抚.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《养生乐羽入肾》_镇静安神缓解惊吓_脾气急躁易受惊吓心理安抚.mp3"
+    },
+    {
+      "name": "《听心》_倾听内心回归本真_心理咨询心灵对话伴奏.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《听心》_倾听内心回归本真_心理咨询心灵对话伴奏.mp3"
+    },
+    {
+      "name": "《吹梦到西洲》_解郁安神平息肝火_抑郁焦虑情绪管理疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《吹梦到西洲》_解郁安神平息肝火_抑郁焦虑情绪管理疗愈.mp3"
+    },
+    {
+      "name": "《吹箫人去玉楼空》_疏肝畅气解忧减压_抑郁忧愁心理疏导.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《吹箫人去玉楼空》_疏肝畅气解忧减压_抑郁忧愁心理疏导.mp3"
+    },
+    {
+      "name": "《墨缘》_舒心畅气缓解焦虑_焦虑紧张心理赋能.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《墨缘》_舒心畅气缓解焦虑_焦虑紧张心理赋能.mp3"
+    },
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    },
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    },
+    {
+      "name": "《梦回仙游》_宣导肺气缓解压力焦虑_压力焦虑胸闷气短.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《梦回仙游》_宣导肺气缓解压力焦虑_压力焦虑胸闷气短.mp3"
+    },
+    {
+      "name": "《欢沁》_愉悦心情活血通脉_情绪低落胸闷不畅.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《欢沁》_愉悦心情活血通脉_情绪低落胸闷不畅.mp3"
+    },
+    {
+      "name": "《水》_解郁忘忧平和心态_忧郁愁绪心理平衡.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《水》_解郁忘忧平和心态_忧郁愁绪心理平衡.mp3"
+    },
+    {
+      "name": "《浮光》_调理神志疏导血脉_心神不宁心理创伤.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《浮光》_调理神志疏导血脉_心神不宁心理创伤.mp3"
+    },
+    {
+      "name": "《涅槃》_安神助眠止梦静心_失眠多梦深度放松疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《涅槃》_安神助眠止梦静心_失眠多梦深度放松疗愈.mp3"
+    },
+    {
+      "name": "《灵气养心》_调整情绪愉悦心情_情绪低落抑郁倾向.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《灵气养心》_调整情绪愉悦心情_情绪低落抑郁倾向.mp3"
+    },
+    {
+      "name": "《紫竹调》_静心养心安神定志_心烦意乱冥想静坐.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《紫竹调》_静心养心安神定志_心烦意乱冥想静坐.mp3"
+    },
+    {
+      "name": "《观心自在》_清心宁神缓解多疑_胆小多疑失眠心理敏感.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《观心自在》_清心宁神缓解多疑_胆小多疑失眠心理敏感.mp3"
+    },
+    {
+      "name": "《鸿迹》_调节内分泌促进睡眠缓解压力_失眠压力大内分泌失调.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《鸿迹》_调节内分泌促进睡眠缓解压力_失眠压力大内分泌失调.mp3"
+    }
+  ]
+}
+2026-07-01 08:48:37,299 - agent - INFO - middleware.py:61 - [消息 9] Tool(None): 好的，音乐库已经获取到了！让我重新为你播放《无羁》这首舒缓压力的音乐。
+2026-07-01 08:48:37,299 - agent - INFO - middleware.py:61 - [消息 10] Tool(play_selected_music): {
+  "detail": "Not Found"
+}
+2026-07-01 08:48:37,299 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "detail": "Not Found"
+}
+2026-07-01 08:48:58,052 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有1条消息。
+2026-07-01 08:48:58,052 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 请帮我播放了然于心
+2026-07-01 08:48:58,052 - agent - DEBUG - middleware.py:69 - [log_before_model]HumanMessage | 请帮我播放了然于心
+2026-07-01 08:48:59,283 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: query_music_library
+2026-07-01 08:48:59,284 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'keyword': '了然于心'}
+2026-07-01 08:48:59,285 - agent - INFO - middleware.py:28 - [tool monitor]工具query_music_library调用成功
+2026-07-01 08:48:59,336 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有3条消息。
+2026-07-01 08:48:59,336 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 请帮我播放了然于心
+2026-07-01 08:48:59,337 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，我先查询一下音乐库中是否有这首歌曲。
+2026-07-01 08:48:59,337 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "匹配关键词「了然于心」共1首",
+  "song_list": [
+    {
+      "name": "《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3"
+    }
+  ]
+}
+2026-07-01 08:48:59,337 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "code": 1,
+  "msg": "匹配关键词「了然于心」共1首",
+  "song_list": [
+    {
+      "name": "《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3"
+    }
+  ]
+}
+2026-07-01 08:49:00,578 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: play_selected_music
+2026-07-01 08:49:00,578 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'song_full_path': 'E:\\AIXiaoNuan\\music\\《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3'}
+2026-07-01 08:49:00,585 - agent - INFO - middleware.py:28 - [tool monitor]工具play_selected_music调用成功
+2026-07-01 08:49:00,638 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有5条消息。
+2026-07-01 08:49:00,638 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 请帮我播放了然于心
+2026-07-01 08:49:00,638 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，我先查询一下音乐库中是否有这首歌曲。
+2026-07-01 08:49:00,638 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "匹配关键词「了然于心」共1首",
+  "song_list": [
+    {
+      "name": "《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3"
+    }
+  ]
+}
+2026-07-01 08:49:00,638 - agent - INFO - middleware.py:61 - [消息 4] Tool(None): 找到了！音乐库中有一首《了然于心》，非常适合用于缓解压力和焦虑。我现在就为你播放。
+2026-07-01 08:49:00,639 - agent - INFO - middleware.py:61 - [消息 5] Tool(play_selected_music): {
+  "detail": "Not Found"
+}
+2026-07-01 08:49:00,639 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "detail": "Not Found"
+}
+2026-07-01 08:49:01,739 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: play_selected_music
+2026-07-01 08:49:01,740 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'song_full_path': 'E:/AIXiaoNuan/music/《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3'}
+2026-07-01 08:49:01,747 - agent - INFO - middleware.py:28 - [tool monitor]工具play_selected_music调用成功
+2026-07-01 08:49:01,800 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有7条消息。
+2026-07-01 08:49:01,801 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 请帮我播放了然于心
+2026-07-01 08:49:01,801 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，我先查询一下音乐库中是否有这首歌曲。
+2026-07-01 08:49:01,801 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "匹配关键词「了然于心」共1首",
+  "song_list": [
+    {
+      "name": "《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3"
+    }
+  ]
+}
+2026-07-01 08:49:01,801 - agent - INFO - middleware.py:61 - [消息 4] Tool(None): 找到了！音乐库中有一首《了然于心》，非常适合用于缓解压力和焦虑。我现在就为你播放。
+2026-07-01 08:49:01,801 - agent - INFO - middleware.py:61 - [消息 5] Tool(play_selected_music): {
+  "detail": "Not Found"
+}
+2026-07-01 08:49:01,801 - agent - INFO - middleware.py:61 - [消息 6] Tool(None): 看起来路径格式需要调整一下，让我再尝试一次。
+2026-07-01 08:49:01,802 - agent - INFO - middleware.py:61 - [消息 7] Tool(play_selected_music): {
+  "detail": "Not Found"
+}
+2026-07-01 08:49:01,802 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "detail": "Not Found"
+}
+2026-07-01 08:49:03,857 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: resume_first_music
+2026-07-01 08:49:03,858 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {}
+2026-07-01 08:49:03,865 - agent - INFO - middleware.py:28 - [tool monitor]工具resume_first_music调用成功
+2026-07-01 08:49:03,917 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有9条消息。
+2026-07-01 08:49:03,918 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 请帮我播放了然于心
+2026-07-01 08:49:03,918 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，我先查询一下音乐库中是否有这首歌曲。
+2026-07-01 08:49:03,918 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "匹配关键词「了然于心」共1首",
+  "song_list": [
+    {
+      "name": "《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3"
+    }
+  ]
+}
+2026-07-01 08:49:03,918 - agent - INFO - middleware.py:61 - [消息 4] Tool(None): 找到了！音乐库中有一首《了然于心》，非常适合用于缓解压力和焦虑。我现在就为你播放。
+2026-07-01 08:49:03,918 - agent - INFO - middleware.py:61 - [消息 5] Tool(play_selected_music): {
+  "detail": "Not Found"
+}
+2026-07-01 08:49:03,918 - agent - INFO - middleware.py:61 - [消息 6] Tool(None): 看起来路径格式需要调整一下，让我再尝试一次。
+2026-07-01 08:49:03,918 - agent - INFO - middleware.py:61 - [消息 7] Tool(play_selected_music): {
+  "detail": "Not Found"
+}
+2026-07-01 08:49:03,918 - agent - INFO - middleware.py:61 - [消息 8] Tool(None): 好的，目前播放服务暂时遇到了点小状况，不过别担心，我已经成功找到了这首《了然于心》——它是一首专门用于疏解压力、缓解焦虑的疗愈音乐。🎵
+
+让我先为你播放一首默认的疗愈音乐，陪伴你放松心情。
+2026-07-01 08:49:03,919 - agent - INFO - middleware.py:61 - [消息 9] Tool(resume_first_music): null
+2026-07-01 08:49:03,919 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | null
+2026-07-01 08:49:23,736 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有1条消息。
+2026-07-01 08:49:23,736 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 请帮我播放http://127.0.0.1:8001/
+2026-07-01 08:49:23,736 - agent - DEBUG - middleware.py:69 - [log_before_model]HumanMessage | 请帮我播放http://127.0.0.1:8001/
+2026-07-01 08:49:25,744 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: query_music_library
+2026-07-01 08:49:25,745 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'keyword': ''}
+2026-07-01 08:49:25,745 - agent - INFO - middleware.py:28 - [tool monitor]工具query_music_library调用成功
+2026-07-01 08:49:25,798 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有3条消息。
+2026-07-01 08:49:25,798 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 请帮我播放http://127.0.0.1:8001/
+2026-07-01 08:49:25,799 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 我注意到你想播放一个网络链接地址。不过，我这里的音乐库是本地存储的音乐文件，只能通过音乐库系统来查询和播放本地音乐，无法直接播放网络链接。
+
+让我先看看音乐库里都有哪些音乐，或许能找到适合你的曲目。
+2026-07-01 08:49:25,799 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "音乐库总计21首歌曲",
+  "song_list": [
+    {
+      "name": "《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3"
+    },
+    {
+      "name": "《仙剑奇缘》_宁心安神疏解郁结_焦虑烦躁心绪不宁.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《仙剑奇缘》_宁心安神疏解郁结_焦虑烦躁心绪不宁.mp3"
+    },
+    {
+      "name": "《兰香涧》_安魂入睡冥想治愈_失眠放松正念疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《兰香涧》_安魂入睡冥想治愈_失眠放松正念疗愈.mp3"
+    },
+    {
+      "name": "《养生乐羽入肾》_镇静安神缓解惊吓_脾气急躁易受惊吓心理安抚.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《养生乐羽入肾》_镇静安神缓解惊吓_脾气急躁易受惊吓心理安抚.mp3"
+    },
+    {
+      "name": "《听心》_倾听内心回归本真_心理咨询心灵对话伴奏.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《听心》_倾听内心回归本真_心理咨询心灵对话伴奏.mp3"
+    },
+    {
+      "name": "《吹梦到西洲》_解郁安神平息肝火_抑郁焦虑情绪管理疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《吹梦到西洲》_解郁安神平息肝火_抑郁焦虑情绪管理疗愈.mp3"
+    },
+    {
+      "name": "《吹箫人去玉楼空》_疏肝畅气解忧减压_抑郁忧愁心理疏导.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《吹箫人去玉楼空》_疏肝畅气解忧减压_抑郁忧愁心理疏导.mp3"
+    },
+    {
+      "name": "《墨缘》_舒心畅气缓解焦虑_焦虑紧张心理赋能.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《墨缘》_舒心畅气缓解焦虑_焦虑紧张心理赋能.mp3"
+    },
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    },
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    },
+    {
+      "name": "《梦回仙游》_宣导肺气缓解压力焦虑_压力焦虑胸闷气短.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《梦回仙游》_宣导肺气缓解压力焦虑_压力焦虑胸闷气短.mp3"
+    },
+    {
+      "name": "《欢沁》_愉悦心情活血通脉_情绪低落胸闷不畅.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《欢沁》_愉悦心情活血通脉_情绪低落胸闷不畅.mp3"
+    },
+    {
+      "name": "《水》_解郁忘忧平和心态_忧郁愁绪心理平衡.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《水》_解郁忘忧平和心态_忧郁愁绪心理平衡.mp3"
+    },
+    {
+      "name": "《浮光》_调理神志疏导血脉_心神不宁心理创伤.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《浮光》_调理神志疏导血脉_心神不宁心理创伤.mp3"
+    },
+    {
+      "name": "《涅槃》_安神助眠止梦静心_失眠多梦深度放松疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《涅槃》_安神助眠止梦静心_失眠多梦深度放松疗愈.mp3"
+    },
+    {
+      "name": "《灵气养心》_调整情绪愉悦心情_情绪低落抑郁倾向.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《灵气养心》_调整情绪愉悦心情_情绪低落抑郁倾向.mp3"
+    },
+    {
+      "name": "《紫竹调》_静心养心安神定志_心烦意乱冥想静坐.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《紫竹调》_静心养心安神定志_心烦意乱冥想静坐.mp3"
+    },
+    {
+      "name": "《观心自在》_清心宁神缓解多疑_胆小多疑失眠心理敏感.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《观心自在》_清心宁神缓解多疑_胆小多疑失眠心理敏感.mp3"
+    },
+    {
+      "name": "《鸿迹》_调节内分泌促进睡眠缓解压力_失眠压力大内分泌失调.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《鸿迹》_调节内分泌促进睡眠缓解压力_失眠压力大内分泌失调.mp3"
+    }
+  ]
+}
+2026-07-01 08:49:25,808 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "code": 1,
+  "msg": "音乐库总计21首歌曲",
+  "song_list": [
+    {
+      "name": "《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3"
+    },
+    {
+      "name": "《仙剑奇缘》_宁心安神疏解郁结_焦虑烦躁心绪不宁.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《仙剑奇缘》_宁心安神疏解郁结_焦虑烦躁心绪不宁.mp3"
+    },
+    {
+      "name": "《兰香涧》_安魂入睡冥想治愈_失眠放松正念疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《兰香涧》_安魂入睡冥想治愈_失眠放松正念疗愈.mp3"
+    },
+    {
+      "name": "《养生乐羽入肾》_镇静安神缓解惊吓_脾气急躁易受惊吓心理安抚.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《养生乐羽入肾》_镇静安神缓解惊吓_脾气急躁易受惊吓心理安抚.mp3"
+    },
+    {
+      "name": "《听心》_倾听内心回归本真_心理咨询心灵对话伴奏.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《听心》_倾听内心回归本真_心理咨询心灵对话伴奏.mp3"
+    },
+    {
+      "name": "《吹梦到西洲》_解郁安神平息肝火_抑郁焦虑情绪管理疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《吹梦到西洲》_解郁安神平息肝火_抑郁焦虑情绪管理疗愈.mp3"
+    },
+    {
+      "name": "《吹箫人去玉楼空》_疏肝畅气解忧减压_抑郁忧愁心理疏导.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《吹箫人去玉楼空》_疏肝畅气解忧减压_抑郁忧愁心理疏导.mp3"
+    },
+    {
+      "name": "《墨缘》_舒心畅气缓解焦虑_焦虑紧张心理赋能.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《墨缘》_舒心畅气缓解焦虑_焦虑紧张心理赋能.mp3"
+    },
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    },
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    },
+    {
+      "name": "《梦回仙游》_宣导肺气缓解压力焦虑_压力焦虑胸闷气短.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《梦回仙游》_宣导肺气缓解压力焦虑_压力焦虑胸闷气短.mp3"
+    },
+    {
+      "name": "《欢沁》_愉悦心情活血通脉_情绪低落胸闷不畅.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《欢沁》_愉悦心情活血通脉_情绪低落胸闷不畅.mp3"
+    },
+    {
+      "name": "《水》_解郁忘忧平和心态_忧郁愁绪心理平衡.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《水》_解郁忘忧平和心态_忧郁愁绪心理平衡.mp3"
+    },
+    {
+      "name": "《浮光》_调理神志疏导血脉_心神不宁心理创伤.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《浮光》_调理神志疏导血脉_心神不宁心理创伤.mp3"
+    },
+    {
+      "name": "《涅槃》_安神助眠止梦静心_失眠多梦深度放松疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《涅槃》_安神助眠止梦静心_失眠多梦深度放松疗愈.mp3"
+    },
+    {
+      "name": "《灵气养心》_调整情绪愉悦心情_情绪低落抑郁倾向.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《灵气养心》_调整情绪愉悦心情_情绪低落抑郁倾向.mp3"
+    },
+    {
+      "name": "《紫竹调》_静心养心安神定志_心烦意乱冥想静坐.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《紫竹调》_静心养心安神定志_心烦意乱冥想静坐.mp3"
+    },
+    {
+      "name": "《观心自在》_清心宁神缓解多疑_胆小多疑失眠心理敏感.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《观心自在》_清心宁神缓解多疑_胆小多疑失眠心理敏感.mp3"
+    },
+    {
+      "name": "《鸿迹》_调节内分泌促进睡眠缓解压力_失眠压力大内分泌失调.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《鸿迹》_调节内分泌促进睡眠缓解压力_失眠压力大内分泌失调.mp3"
+    }
+  ]
+}
+2026-07-01 08:49:41,017 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有1条消息。
+2026-07-01 08:49:41,017 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 请帮我播放一首舒缓音乐
+2026-07-01 08:49:41,017 - agent - DEBUG - middleware.py:69 - [log_before_model]HumanMessage | 请帮我播放一首舒缓音乐
+2026-07-01 08:49:42,119 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: query_music_library
+2026-07-01 08:49:42,120 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'keyword': '舒缓'}
+2026-07-01 08:49:42,121 - agent - INFO - middleware.py:28 - [tool monitor]工具query_music_library调用成功
+2026-07-01 08:49:42,173 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有3条消息。
+2026-07-01 08:49:42,173 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 请帮我播放一首舒缓音乐
+2026-07-01 08:49:42,173 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，我先查询一下音乐库，看看有哪些舒缓的音乐可以推荐给您。
+2026-07-01 08:49:42,173 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "匹配关键词「舒缓」共1首",
+  "song_list": [
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    }
+  ]
+}
+2026-07-01 08:49:42,173 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "code": 1,
+  "msg": "匹配关键词「舒缓」共1首",
+  "song_list": [
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    }
+  ]
+}
+2026-07-01 08:49:43,800 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: play_selected_music
+2026-07-01 08:49:43,801 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'song_full_path': 'E:\\AIXiaoN暖\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3'}
+2026-07-01 08:49:43,805 - agent - INFO - middleware.py:28 - [tool monitor]工具play_selected_music调用成功
+2026-07-01 08:49:43,857 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有5条消息。
+2026-07-01 08:49:43,858 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 请帮我播放一首舒缓音乐
+2026-07-01 08:49:43,858 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，我先查询一下音乐库，看看有哪些舒缓的音乐可以推荐给您。
+2026-07-01 08:49:43,858 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "匹配关键词「舒缓」共1首",
+  "song_list": [
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    }
+  ]
+}
+2026-07-01 08:49:43,858 - agent - INFO - middleware.py:61 - [消息 4] Tool(None): 我找到了一首适合舒缓放松的音乐——《无羁》，它专为压力过大、心理紧张时聆听而设计。现在为您播放，请放松心情，慢慢感受音乐的流淌。
+2026-07-01 08:49:43,858 - agent - INFO - middleware.py:61 - [消息 5] Tool(play_selected_music): {
+  "detail": "Not Found"
+}
+2026-07-01 08:49:43,858 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "detail": "Not Found"
+}
+2026-07-01 08:49:44,920 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: query_music_library
+2026-07-01 08:49:44,921 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'keyword': ''}
+2026-07-01 08:49:44,922 - agent - INFO - middleware.py:28 - [tool monitor]工具query_music_library调用成功
+2026-07-01 08:49:44,974 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有7条消息。
+2026-07-01 08:49:44,975 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 请帮我播放一首舒缓音乐
+2026-07-01 08:49:44,975 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，我先查询一下音乐库，看看有哪些舒缓的音乐可以推荐给您。
+2026-07-01 08:49:44,975 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "匹配关键词「舒缓」共1首",
+  "song_list": [
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    }
+  ]
+}
+2026-07-01 08:49:44,975 - agent - INFO - middleware.py:61 - [消息 4] Tool(None): 我找到了一首适合舒缓放松的音乐——《无羁》，它专为压力过大、心理紧张时聆听而设计。现在为您播放，请放松心情，慢慢感受音乐的流淌。
+2026-07-01 08:49:44,975 - agent - INFO - middleware.py:61 - [消息 5] Tool(play_selected_music): {
+  "detail": "Not Found"
+}
+2026-07-01 08:49:44,975 - agent - INFO - middleware.py:61 - [消息 6] Tool(None): 看起来路径有些问题，让我重新获取一下正确的路径信息。
+2026-07-01 08:49:44,976 - agent - INFO - middleware.py:61 - [消息 7] Tool(query_music_library): {
+  "code": 1,
+  "msg": "音乐库总计21首歌曲",
+  "song_list": [
+    {
+      "name": "《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3"
+    },
+    {
+      "name": "《仙剑奇缘》_宁心安神疏解郁结_焦虑烦躁心绪不宁.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《仙剑奇缘》_宁心安神疏解郁结_焦虑烦躁心绪不宁.mp3"
+    },
+    {
+      "name": "《兰香涧》_安魂入睡冥想治愈_失眠放松正念疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《兰香涧》_安魂入睡冥想治愈_失眠放松正念疗愈.mp3"
+    },
+    {
+      "name": "《养生乐羽入肾》_镇静安神缓解惊吓_脾气急躁易受惊吓心理安抚.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《养生乐羽入肾》_镇静安神缓解惊吓_脾气急躁易受惊吓心理安抚.mp3"
+    },
+    {
+      "name": "《听心》_倾听内心回归本真_心理咨询心灵对话伴奏.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《听心》_倾听内心回归本真_心理咨询心灵对话伴奏.mp3"
+    },
+    {
+      "name": "《吹梦到西洲》_解郁安神平息肝火_抑郁焦虑情绪管理疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《吹梦到西洲》_解郁安神平息肝火_抑郁焦虑情绪管理疗愈.mp3"
+    },
+    {
+      "name": "《吹箫人去玉楼空》_疏肝畅气解忧减压_抑郁忧愁心理疏导.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《吹箫人去玉楼空》_疏肝畅气解忧减压_抑郁忧愁心理疏导.mp3"
+    },
+    {
+      "name": "《墨缘》_舒心畅气缓解焦虑_焦虑紧张心理赋能.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《墨缘》_舒心畅气缓解焦虑_焦虑紧张心理赋能.mp3"
+    },
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    },
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    },
+    {
+      "name": "《梦回仙游》_宣导肺气缓解压力焦虑_压力焦虑胸闷气短.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《梦回仙游》_宣导肺气缓解压力焦虑_压力焦虑胸闷气短.mp3"
+    },
+    {
+      "name": "《欢沁》_愉悦心情活血通脉_情绪低落胸闷不畅.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《欢沁》_愉悦心情活血通脉_情绪低落胸闷不畅.mp3"
+    },
+    {
+      "name": "《水》_解郁忘忧平和心态_忧郁愁绪心理平衡.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《水》_解郁忘忧平和心态_忧郁愁绪心理平衡.mp3"
+    },
+    {
+      "name": "《浮光》_调理神志疏导血脉_心神不宁心理创伤.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《浮光》_调理神志疏导血脉_心神不宁心理创伤.mp3"
+    },
+    {
+      "name": "《涅槃》_安神助眠止梦静心_失眠多梦深度放松疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《涅槃》_安神助眠止梦静心_失眠多梦深度放松疗愈.mp3"
+    },
+    {
+      "name": "《灵气养心》_调整情绪愉悦心情_情绪低落抑郁倾向.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《灵气养心》_调整情绪愉悦心情_情绪低落抑郁倾向.mp3"
+    },
+    {
+      "name": "《紫竹调》_静心养心安神定志_心烦意乱冥想静坐.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《紫竹调》_静心养心安神定志_心烦意乱冥想静坐.mp3"
+    },
+    {
+      "name": "《观心自在》_清心宁神缓解多疑_胆小多疑失眠心理敏感.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《观心自在》_清心宁神缓解多疑_胆小多疑失眠心理敏感.mp3"
+    },
+    {
+      "name": "《鸿迹》_调节内分泌促进睡眠缓解压力_失眠压力大内分泌失调.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《鸿迹》_调节内分泌促进睡眠缓解压力_失眠压力大内分泌失调.mp3"
+    }
+  ]
+}
+2026-07-01 08:49:44,979 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "code": 1,
+  "msg": "音乐库总计21首歌曲",
+  "song_list": [
+    {
+      "name": "《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3"
+    },
+    {
+      "name": "《仙剑奇缘》_宁心安神疏解郁结_焦虑烦躁心绪不宁.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《仙剑奇缘》_宁心安神疏解郁结_焦虑烦躁心绪不宁.mp3"
+    },
+    {
+      "name": "《兰香涧》_安魂入睡冥想治愈_失眠放松正念疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《兰香涧》_安魂入睡冥想治愈_失眠放松正念疗愈.mp3"
+    },
+    {
+      "name": "《养生乐羽入肾》_镇静安神缓解惊吓_脾气急躁易受惊吓心理安抚.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《养生乐羽入肾》_镇静安神缓解惊吓_脾气急躁易受惊吓心理安抚.mp3"
+    },
+    {
+      "name": "《听心》_倾听内心回归本真_心理咨询心灵对话伴奏.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《听心》_倾听内心回归本真_心理咨询心灵对话伴奏.mp3"
+    },
+    {
+      "name": "《吹梦到西洲》_解郁安神平息肝火_抑郁焦虑情绪管理疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《吹梦到西洲》_解郁安神平息肝火_抑郁焦虑情绪管理疗愈.mp3"
+    },
+    {
+      "name": "《吹箫人去玉楼空》_疏肝畅气解忧减压_抑郁忧愁心理疏导.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《吹箫人去玉楼空》_疏肝畅气解忧减压_抑郁忧愁心理疏导.mp3"
+    },
+    {
+      "name": "《墨缘》_舒心畅气缓解焦虑_焦虑紧张心理赋能.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《墨缘》_舒心畅气缓解焦虑_焦虑紧张心理赋能.mp3"
+    },
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    },
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    },
+    {
+      "name": "《梦回仙游》_宣导肺气缓解压力焦虑_压力焦虑胸闷气短.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《梦回仙游》_宣导肺气缓解压力焦虑_压力焦虑胸闷气短.mp3"
+    },
+    {
+      "name": "《欢沁》_愉悦心情活血通脉_情绪低落胸闷不畅.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《欢沁》_愉悦心情活血通脉_情绪低落胸闷不畅.mp3"
+    },
+    {
+      "name": "《水》_解郁忘忧平和心态_忧郁愁绪心理平衡.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《水》_解郁忘忧平和心态_忧郁愁绪心理平衡.mp3"
+    },
+    {
+      "name": "《浮光》_调理神志疏导血脉_心神不宁心理创伤.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《浮光》_调理神志疏导血脉_心神不宁心理创伤.mp3"
+    },
+    {
+      "name": "《涅槃》_安神助眠止梦静心_失眠多梦深度放松疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《涅槃》_安神助眠止梦静心_失眠多梦深度放松疗愈.mp3"
+    },
+    {
+      "name": "《灵气养心》_调整情绪愉悦心情_情绪低落抑郁倾向.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《灵气养心》_调整情绪愉悦心情_情绪低落抑郁倾向.mp3"
+    },
+    {
+      "name": "《紫竹调》_静心养心安神定志_心烦意乱冥想静坐.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《紫竹调》_静心养心安神定志_心烦意乱冥想静坐.mp3"
+    },
+    {
+      "name": "《观心自在》_清心宁神缓解多疑_胆小多疑失眠心理敏感.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《观心自在》_清心宁神缓解多疑_胆小多疑失眠心理敏感.mp3"
+    },
+    {
+      "name": "《鸿迹》_调节内分泌促进睡眠缓解压力_失眠压力大内分泌失调.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《鸿迹》_调节内分泌促进睡眠缓解压力_失眠压力大内分泌失调.mp3"
+    }
+  ]
+}
+2026-07-01 08:49:46,792 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: play_selected_music
+2026-07-01 08:49:46,793 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'song_full_path': 'E:\\AIXiaoNuan\\music\\《墨缘》_舒心畅气缓解焦虑_焦虑紧张心理赋能.mp3'}
+2026-07-01 08:49:46,797 - agent - INFO - middleware.py:28 - [tool monitor]工具play_selected_music调用成功
+2026-07-01 08:49:46,849 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有9条消息。
+2026-07-01 08:49:46,850 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 请帮我播放一首舒缓音乐
+2026-07-01 08:49:46,850 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，我先查询一下音乐库，看看有哪些舒缓的音乐可以推荐给您。
+2026-07-01 08:49:46,850 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "匹配关键词「舒缓」共1首",
+  "song_list": [
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    }
+  ]
+}
+2026-07-01 08:49:46,850 - agent - INFO - middleware.py:61 - [消息 4] Tool(None): 我找到了一首适合舒缓放松的音乐——《无羁》，它专为压力过大、心理紧张时聆听而设计。现在为您播放，请放松心情，慢慢感受音乐的流淌。
+2026-07-01 08:49:46,850 - agent - INFO - middleware.py:61 - [消息 5] Tool(play_selected_music): {
+  "detail": "Not Found"
+}
+2026-07-01 08:49:46,850 - agent - INFO - middleware.py:61 - [消息 6] Tool(None): 看起来路径有些问题，让我重新获取一下正确的路径信息。
+2026-07-01 08:49:46,850 - agent - INFO - middleware.py:61 - [消息 7] Tool(query_music_library): {
+  "code": 1,
+  "msg": "音乐库总计21首歌曲",
+  "song_list": [
+    {
+      "name": "《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3"
+    },
+    {
+      "name": "《仙剑奇缘》_宁心安神疏解郁结_焦虑烦躁心绪不宁.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《仙剑奇缘》_宁心安神疏解郁结_焦虑烦躁心绪不宁.mp3"
+    },
+    {
+      "name": "《兰香涧》_安魂入睡冥想治愈_失眠放松正念疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《兰香涧》_安魂入睡冥想治愈_失眠放松正念疗愈.mp3"
+    },
+    {
+      "name": "《养生乐羽入肾》_镇静安神缓解惊吓_脾气急躁易受惊吓心理安抚.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《养生乐羽入肾》_镇静安神缓解惊吓_脾气急躁易受惊吓心理安抚.mp3"
+    },
+    {
+      "name": "《听心》_倾听内心回归本真_心理咨询心灵对话伴奏.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《听心》_倾听内心回归本真_心理咨询心灵对话伴奏.mp3"
+    },
+    {
+      "name": "《吹梦到西洲》_解郁安神平息肝火_抑郁焦虑情绪管理疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《吹梦到西洲》_解郁安神平息肝火_抑郁焦虑情绪管理疗愈.mp3"
+    },
+    {
+      "name": "《吹箫人去玉楼空》_疏肝畅气解忧减压_抑郁忧愁心理疏导.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《吹箫人去玉楼空》_疏肝畅气解忧减压_抑郁忧愁心理疏导.mp3"
+    },
+    {
+      "name": "《墨缘》_舒心畅气缓解焦虑_焦虑紧张心理赋能.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《墨缘》_舒心畅气缓解焦虑_焦虑紧张心理赋能.mp3"
+    },
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    },
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    },
+    {
+      "name": "《梦回仙游》_宣导肺气缓解压力焦虑_压力焦虑胸闷气短.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《梦回仙游》_宣导肺气缓解压力焦虑_压力焦虑胸闷气短.mp3"
+    },
+    {
+      "name": "《欢沁》_愉悦心情活血通脉_情绪低落胸闷不畅.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《欢沁》_愉悦心情活血通脉_情绪低落胸闷不畅.mp3"
+    },
+    {
+      "name": "《水》_解郁忘忧平和心态_忧郁愁绪心理平衡.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《水》_解郁忘忧平和心态_忧郁愁绪心理平衡.mp3"
+    },
+    {
+      "name": "《浮光》_调理神志疏导血脉_心神不宁心理创伤.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《浮光》_调理神志疏导血脉_心神不宁心理创伤.mp3"
+    },
+    {
+      "name": "《涅槃》_安神助眠止梦静心_失眠多梦深度放松疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《涅槃》_安神助眠止梦静心_失眠多梦深度放松疗愈.mp3"
+    },
+    {
+      "name": "《灵气养心》_调整情绪愉悦心情_情绪低落抑郁倾向.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《灵气养心》_调整情绪愉悦心情_情绪低落抑郁倾向.mp3"
+    },
+    {
+      "name": "《紫竹调》_静心养心安神定志_心烦意乱冥想静坐.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《紫竹调》_静心养心安神定志_心烦意乱冥想静坐.mp3"
+    },
+    {
+      "name": "《观心自在》_清心宁神缓解多疑_胆小多疑失眠心理敏感.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《观心自在》_清心宁神缓解多疑_胆小多疑失眠心理敏感.mp3"
+    },
+    {
+      "name": "《鸿迹》_调节内分泌促进睡眠缓解压力_失眠压力大内分泌失调.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《鸿迹》_调节内分泌促进睡眠缓解压力_失眠压力大内分泌失调.mp3"
+    }
+  ]
+}
+2026-07-01 08:49:46,856 - agent - INFO - middleware.py:61 - [消息 8] Tool(None): 好的，音乐库里有不少舒缓放松的音乐呢！我为您挑选一首非常适合放松的曲子——《墨缘》，它专为缓解焦虑、紧张而设计，现在为您播放。
+2026-07-01 08:49:46,856 - agent - INFO - middleware.py:61 - [消息 9] Tool(play_selected_music): {
+  "detail": "Not Found"
+}
+2026-07-01 08:49:46,856 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "detail": "Not Found"
+}
+2026-07-01 08:49:48,293 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: play_selected_music
+2026-07-01 08:49:48,294 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'song_full_path': 'E:/AIXiaoNuan/music/《墨缘》_舒心畅气缓解焦虑_焦虑紧张心理赋能.mp3'}
+2026-07-01 08:49:48,298 - agent - INFO - middleware.py:28 - [tool monitor]工具play_selected_music调用成功
+2026-07-01 08:49:48,350 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有11条消息。
+2026-07-01 08:49:48,351 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 请帮我播放一首舒缓音乐
+2026-07-01 08:49:48,351 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，我先查询一下音乐库，看看有哪些舒缓的音乐可以推荐给您。
+2026-07-01 08:49:48,351 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "匹配关键词「舒缓」共1首",
+  "song_list": [
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    }
+  ]
+}
+2026-07-01 08:49:48,351 - agent - INFO - middleware.py:61 - [消息 4] Tool(None): 我找到了一首适合舒缓放松的音乐——《无羁》，它专为压力过大、心理紧张时聆听而设计。现在为您播放，请放松心情，慢慢感受音乐的流淌。
+2026-07-01 08:49:48,351 - agent - INFO - middleware.py:61 - [消息 5] Tool(play_selected_music): {
+  "detail": "Not Found"
+}
+2026-07-01 08:49:48,351 - agent - INFO - middleware.py:61 - [消息 6] Tool(None): 看起来路径有些问题，让我重新获取一下正确的路径信息。
+2026-07-01 08:49:48,351 - agent - INFO - middleware.py:61 - [消息 7] Tool(query_music_library): {
+  "code": 1,
+  "msg": "音乐库总计21首歌曲",
+  "song_list": [
+    {
+      "name": "《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3"
+    },
+    {
+      "name": "《仙剑奇缘》_宁心安神疏解郁结_焦虑烦躁心绪不宁.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《仙剑奇缘》_宁心安神疏解郁结_焦虑烦躁心绪不宁.mp3"
+    },
+    {
+      "name": "《兰香涧》_安魂入睡冥想治愈_失眠放松正念疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《兰香涧》_安魂入睡冥想治愈_失眠放松正念疗愈.mp3"
+    },
+    {
+      "name": "《养生乐羽入肾》_镇静安神缓解惊吓_脾气急躁易受惊吓心理安抚.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《养生乐羽入肾》_镇静安神缓解惊吓_脾气急躁易受惊吓心理安抚.mp3"
+    },
+    {
+      "name": "《听心》_倾听内心回归本真_心理咨询心灵对话伴奏.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《听心》_倾听内心回归本真_心理咨询心灵对话伴奏.mp3"
+    },
+    {
+      "name": "《吹梦到西洲》_解郁安神平息肝火_抑郁焦虑情绪管理疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《吹梦到西洲》_解郁安神平息肝火_抑郁焦虑情绪管理疗愈.mp3"
+    },
+    {
+      "name": "《吹箫人去玉楼空》_疏肝畅气解忧减压_抑郁忧愁心理疏导.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《吹箫人去玉楼空》_疏肝畅气解忧减压_抑郁忧愁心理疏导.mp3"
+    },
+    {
+      "name": "《墨缘》_舒心畅气缓解焦虑_焦虑紧张心理赋能.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《墨缘》_舒心畅气缓解焦虑_焦虑紧张心理赋能.mp3"
+    },
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    },
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    },
+    {
+      "name": "《梦回仙游》_宣导肺气缓解压力焦虑_压力焦虑胸闷气短.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《梦回仙游》_宣导肺气缓解压力焦虑_压力焦虑胸闷气短.mp3"
+    },
+    {
+      "name": "《欢沁》_愉悦心情活血通脉_情绪低落胸闷不畅.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《欢沁》_愉悦心情活血通脉_情绪低落胸闷不畅.mp3"
+    },
+    {
+      "name": "《水》_解郁忘忧平和心态_忧郁愁绪心理平衡.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《水》_解郁忘忧平和心态_忧郁愁绪心理平衡.mp3"
+    },
+    {
+      "name": "《浮光》_调理神志疏导血脉_心神不宁心理创伤.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《浮光》_调理神志疏导血脉_心神不宁心理创伤.mp3"
+    },
+    {
+      "name": "《涅槃》_安神助眠止梦静心_失眠多梦深度放松疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《涅槃》_安神助眠止梦静心_失眠多梦深度放松疗愈.mp3"
+    },
+    {
+      "name": "《灵气养心》_调整情绪愉悦心情_情绪低落抑郁倾向.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《灵气养心》_调整情绪愉悦心情_情绪低落抑郁倾向.mp3"
+    },
+    {
+      "name": "《紫竹调》_静心养心安神定志_心烦意乱冥想静坐.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《紫竹调》_静心养心安神定志_心烦意乱冥想静坐.mp3"
+    },
+    {
+      "name": "《观心自在》_清心宁神缓解多疑_胆小多疑失眠心理敏感.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《观心自在》_清心宁神缓解多疑_胆小多疑失眠心理敏感.mp3"
+    },
+    {
+      "name": "《鸿迹》_调节内分泌促进睡眠缓解压力_失眠压力大内分泌失调.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《鸿迹》_调节内分泌促进睡眠缓解压力_失眠压力大内分泌失调.mp3"
+    }
+  ]
+}
+2026-07-01 08:49:48,354 - agent - INFO - middleware.py:61 - [消息 8] Tool(None): 好的，音乐库里有不少舒缓放松的音乐呢！我为您挑选一首非常适合放松的曲子——《墨缘》，它专为缓解焦虑、紧张而设计，现在为您播放。
+2026-07-01 08:49:48,354 - agent - INFO - middleware.py:61 - [消息 9] Tool(play_selected_music): {
+  "detail": "Not Found"
+}
+2026-07-01 08:49:48,354 - agent - INFO - middleware.py:61 - [消息 10] Tool(None): 看起来路径分隔符可能需要调整一下，我再尝试一下。
+2026-07-01 08:49:48,354 - agent - INFO - middleware.py:61 - [消息 11] Tool(play_selected_music): {
+  "detail": "Not Found"
+}
+2026-07-01 08:49:48,354 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "detail": "Not Found"
+}
+2026-07-01 08:49:49,400 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: play_selected_music
+2026-07-01 08:49:49,400 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'song_full_path': 'E:\\\\AIXiaoNuan\\\\music\\\\《墨缘》_舒心畅气缓解焦虑_焦虑紧张心理赋能.mp3'}
+2026-07-01 08:49:49,405 - agent - INFO - middleware.py:28 - [tool monitor]工具play_selected_music调用成功
+2026-07-01 08:49:49,457 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有13条消息。
+2026-07-01 08:49:49,457 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 请帮我播放一首舒缓音乐
+2026-07-01 08:49:49,457 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，我先查询一下音乐库，看看有哪些舒缓的音乐可以推荐给您。
+2026-07-01 08:49:49,457 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "匹配关键词「舒缓」共1首",
+  "song_list": [
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    }
+  ]
+}
+2026-07-01 08:49:49,458 - agent - INFO - middleware.py:61 - [消息 4] Tool(None): 我找到了一首适合舒缓放松的音乐——《无羁》，它专为压力过大、心理紧张时聆听而设计。现在为您播放，请放松心情，慢慢感受音乐的流淌。
+2026-07-01 08:49:49,458 - agent - INFO - middleware.py:61 - [消息 5] Tool(play_selected_music): {
+  "detail": "Not Found"
+}
+2026-07-01 08:49:49,458 - agent - INFO - middleware.py:61 - [消息 6] Tool(None): 看起来路径有些问题，让我重新获取一下正确的路径信息。
+2026-07-01 08:49:49,458 - agent - INFO - middleware.py:61 - [消息 7] Tool(query_music_library): {
+  "code": 1,
+  "msg": "音乐库总计21首歌曲",
+  "song_list": [
+    {
+      "name": "《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3"
+    },
+    {
+      "name": "《仙剑奇缘》_宁心安神疏解郁结_焦虑烦躁心绪不宁.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《仙剑奇缘》_宁心安神疏解郁结_焦虑烦躁心绪不宁.mp3"
+    },
+    {
+      "name": "《兰香涧》_安魂入睡冥想治愈_失眠放松正念疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《兰香涧》_安魂入睡冥想治愈_失眠放松正念疗愈.mp3"
+    },
+    {
+      "name": "《养生乐羽入肾》_镇静安神缓解惊吓_脾气急躁易受惊吓心理安抚.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《养生乐羽入肾》_镇静安神缓解惊吓_脾气急躁易受惊吓心理安抚.mp3"
+    },
+    {
+      "name": "《听心》_倾听内心回归本真_心理咨询心灵对话伴奏.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《听心》_倾听内心回归本真_心理咨询心灵对话伴奏.mp3"
+    },
+    {
+      "name": "《吹梦到西洲》_解郁安神平息肝火_抑郁焦虑情绪管理疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《吹梦到西洲》_解郁安神平息肝火_抑郁焦虑情绪管理疗愈.mp3"
+    },
+    {
+      "name": "《吹箫人去玉楼空》_疏肝畅气解忧减压_抑郁忧愁心理疏导.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《吹箫人去玉楼空》_疏肝畅气解忧减压_抑郁忧愁心理疏导.mp3"
+    },
+    {
+      "name": "《墨缘》_舒心畅气缓解焦虑_焦虑紧张心理赋能.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《墨缘》_舒心畅气缓解焦虑_焦虑紧张心理赋能.mp3"
+    },
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    },
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    },
+    {
+      "name": "《梦回仙游》_宣导肺气缓解压力焦虑_压力焦虑胸闷气短.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《梦回仙游》_宣导肺气缓解压力焦虑_压力焦虑胸闷气短.mp3"
+    },
+    {
+      "name": "《欢沁》_愉悦心情活血通脉_情绪低落胸闷不畅.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《欢沁》_愉悦心情活血通脉_情绪低落胸闷不畅.mp3"
+    },
+    {
+      "name": "《水》_解郁忘忧平和心态_忧郁愁绪心理平衡.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《水》_解郁忘忧平和心态_忧郁愁绪心理平衡.mp3"
+    },
+    {
+      "name": "《浮光》_调理神志疏导血脉_心神不宁心理创伤.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《浮光》_调理神志疏导血脉_心神不宁心理创伤.mp3"
+    },
+    {
+      "name": "《涅槃》_安神助眠止梦静心_失眠多梦深度放松疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《涅槃》_安神助眠止梦静心_失眠多梦深度放松疗愈.mp3"
+    },
+    {
+      "name": "《灵气养心》_调整情绪愉悦心情_情绪低落抑郁倾向.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《灵气养心》_调整情绪愉悦心情_情绪低落抑郁倾向.mp3"
+    },
+    {
+      "name": "《紫竹调》_静心养心安神定志_心烦意乱冥想静坐.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《紫竹调》_静心养心安神定志_心烦意乱冥想静坐.mp3"
+    },
+    {
+      "name": "《观心自在》_清心宁神缓解多疑_胆小多疑失眠心理敏感.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《观心自在》_清心宁神缓解多疑_胆小多疑失眠心理敏感.mp3"
+    },
+    {
+      "name": "《鸿迹》_调节内分泌促进睡眠缓解压力_失眠压力大内分泌失调.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《鸿迹》_调节内分泌促进睡眠缓解压力_失眠压力大内分泌失调.mp3"
+    }
+  ]
+}
+2026-07-01 08:49:49,467 - agent - INFO - middleware.py:61 - [消息 8] Tool(None): 好的，音乐库里有不少舒缓放松的音乐呢！我为您挑选一首非常适合放松的曲子——《墨缘》，它专为缓解焦虑、紧张而设计，现在为您播放。
+2026-07-01 08:49:49,467 - agent - INFO - middleware.py:61 - [消息 9] Tool(play_selected_music): {
+  "detail": "Not Found"
+}
+2026-07-01 08:49:49,467 - agent - INFO - middleware.py:61 - [消息 10] Tool(None): 看起来路径分隔符可能需要调整一下，我再尝试一下。
+2026-07-01 08:49:49,467 - agent - INFO - middleware.py:61 - [消息 11] Tool(play_selected_music): {
+  "detail": "Not Found"
+}
+2026-07-01 08:49:49,467 - agent - INFO - middleware.py:61 - [消息 12] Tool(None): 
+2026-07-01 08:49:49,467 - agent - INFO - middleware.py:61 - [消息 13] Tool(play_selected_music): {
+  "detail": "Not Found"
+}
+2026-07-01 08:49:49,467 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "detail": "Not Found"
+}
+2026-07-01 08:49:50,505 - agent - INFO - middleware.py:23 - [tool monitor]执行工具: play_selected_music
+2026-07-01 08:49:50,505 - agent - INFO - middleware.py:24 - [tool monitor]传入参数: {'song_full_path': 'E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3'}
+2026-07-01 08:49:50,510 - agent - INFO - middleware.py:28 - [tool monitor]工具play_selected_music调用成功
+2026-07-01 08:49:50,562 - agent - INFO - middleware.py:43 - [log_before_model]即将调用模型，带有15条消息。
+2026-07-01 08:49:50,562 - agent - INFO - middleware.py:61 - [消息 1] Tool(None): 请帮我播放一首舒缓音乐
+2026-07-01 08:49:50,562 - agent - INFO - middleware.py:61 - [消息 2] Tool(None): 好的，我先查询一下音乐库，看看有哪些舒缓的音乐可以推荐给您。
+2026-07-01 08:49:50,564 - agent - INFO - middleware.py:61 - [消息 3] Tool(query_music_library): {
+  "code": 1,
+  "msg": "匹配关键词「舒缓」共1首",
+  "song_list": [
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    }
+  ]
+}
+2026-07-01 08:49:50,564 - agent - INFO - middleware.py:61 - [消息 4] Tool(None): 我找到了一首适合舒缓放松的音乐——《无羁》，它专为压力过大、心理紧张时聆听而设计。现在为您播放，请放松心情，慢慢感受音乐的流淌。
+2026-07-01 08:49:50,564 - agent - INFO - middleware.py:61 - [消息 5] Tool(play_selected_music): {
+  "detail": "Not Found"
+}
+2026-07-01 08:49:50,564 - agent - INFO - middleware.py:61 - [消息 6] Tool(None): 看起来路径有些问题，让我重新获取一下正确的路径信息。
+2026-07-01 08:49:50,564 - agent - INFO - middleware.py:61 - [消息 7] Tool(query_music_library): {
+  "code": 1,
+  "msg": "音乐库总计21首歌曲",
+  "song_list": [
+    {
+      "name": "《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《了然于心》_疏解压力缓解焦虑_失眠焦虑心理减压.mp3"
+    },
+    {
+      "name": "《仙剑奇缘》_宁心安神疏解郁结_焦虑烦躁心绪不宁.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《仙剑奇缘》_宁心安神疏解郁结_焦虑烦躁心绪不宁.mp3"
+    },
+    {
+      "name": "《兰香涧》_安魂入睡冥想治愈_失眠放松正念疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《兰香涧》_安魂入睡冥想治愈_失眠放松正念疗愈.mp3"
+    },
+    {
+      "name": "《养生乐羽入肾》_镇静安神缓解惊吓_脾气急躁易受惊吓心理安抚.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《养生乐羽入肾》_镇静安神缓解惊吓_脾气急躁易受惊吓心理安抚.mp3"
+    },
+    {
+      "name": "《听心》_倾听内心回归本真_心理咨询心灵对话伴奏.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《听心》_倾听内心回归本真_心理咨询心灵对话伴奏.mp3"
+    },
+    {
+      "name": "《吹梦到西洲》_解郁安神平息肝火_抑郁焦虑情绪管理疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《吹梦到西洲》_解郁安神平息肝火_抑郁焦虑情绪管理疗愈.mp3"
+    },
+    {
+      "name": "《吹箫人去玉楼空》_疏肝畅气解忧减压_抑郁忧愁心理疏导.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《吹箫人去玉楼空》_疏肝畅气解忧减压_抑郁忧愁心理疏导.mp3"
+    },
+    {
+      "name": "《墨缘》_舒心畅气缓解焦虑_焦虑紧张心理赋能.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《墨缘》_舒心畅气缓解焦虑_焦虑紧张心理赋能.mp3"
+    },
+    {
+      "name": "《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》海河【心理治疗音乐+化解情绪=摆脱抑郁症焦虑症】.mp3"
+    },
+    {
+      "name": "《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈》轻云【大自然音乐+心理健康养生=摆脱焦虑症】战胜.mp3"
+    },
+    {
+      "name": "《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《心灵疗愈音乐》春黛【心理治疗音乐+化解情绪=摆脱抑郁症焦虑.mp3"
+    },
+    {
+      "name": "《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《无羁》_强肾降火镇静舒缓压力_压力过大心理紧张.mp3"
+    },
+    {
+      "name": "《梦回仙游》_宣导肺气缓解压力焦虑_压力焦虑胸闷气短.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《梦回仙游》_宣导肺气缓解压力焦虑_压力焦虑胸闷气短.mp3"
+    },
+    {
+      "name": "《欢沁》_愉悦心情活血通脉_情绪低落胸闷不畅.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《欢沁》_愉悦心情活血通脉_情绪低落胸闷不畅.mp3"
+    },
+    {
+      "name": "《水》_解郁忘忧平和心态_忧郁愁绪心理平衡.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《水》_解郁忘忧平和心态_忧郁愁绪心理平衡.mp3"
+    },
+    {
+      "name": "《浮光》_调理神志疏导血脉_心神不宁心理创伤.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《浮光》_调理神志疏导血脉_心神不宁心理创伤.mp3"
+    },
+    {
+      "name": "《涅槃》_安神助眠止梦静心_失眠多梦深度放松疗愈.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《涅槃》_安神助眠止梦静心_失眠多梦深度放松疗愈.mp3"
+    },
+    {
+      "name": "《灵气养心》_调整情绪愉悦心情_情绪低落抑郁倾向.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《灵气养心》_调整情绪愉悦心情_情绪低落抑郁倾向.mp3"
+    },
+    {
+      "name": "《紫竹调》_静心养心安神定志_心烦意乱冥想静坐.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《紫竹调》_静心养心安神定志_心烦意乱冥想静坐.mp3"
+    },
+    {
+      "name": "《观心自在》_清心宁神缓解多疑_胆小多疑失眠心理敏感.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《观心自在》_清心宁神缓解多疑_胆小多疑失眠心理敏感.mp3"
+    },
+    {
+      "name": "《鸿迹》_调节内分泌促进睡眠缓解压力_失眠压力大内分泌失调.mp3",
+      "path": "E:\\AIXiaoNuan\\music\\《鸿迹》_调节内分泌促进睡眠缓解压力_失眠压力大内分泌失调.mp3"
+    }
+  ]
+}
+2026-07-01 08:49:50,577 - agent - INFO - middleware.py:61 - [消息 8] Tool(None): 好的，音乐库里有不少舒缓放松的音乐呢！我为您挑选一首非常适合放松的曲子——《墨缘》，它专为缓解焦虑、紧张而设计，现在为您播放。
+2026-07-01 08:49:50,577 - agent - INFO - middleware.py:61 - [消息 9] Tool(play_selected_music): {
+  "detail": "Not Found"
+}
+2026-07-01 08:49:50,577 - agent - INFO - middleware.py:61 - [消息 10] Tool(None): 看起来路径分隔符可能需要调整一下，我再尝试一下。
+2026-07-01 08:49:50,577 - agent - INFO - middleware.py:61 - [消息 11] Tool(play_selected_music): {
+  "detail": "Not Found"
+}
+2026-07-01 08:49:50,577 - agent - INFO - middleware.py:61 - [消息 12] Tool(None): 
+2026-07-01 08:49:50,578 - agent - INFO - middleware.py:61 - [消息 13] Tool(play_selected_music): {
+  "detail": "Not Found"
+}
+2026-07-01 08:49:50,578 - agent - INFO - middleware.py:61 - [消息 14] Tool(None): 
+2026-07-01 08:49:50,578 - agent - INFO - middleware.py:61 - [消息 15] Tool(play_selected_music): {
+  "detail": "Not Found"
+}
+2026-07-01 08:49:50,578 - agent - DEBUG - middleware.py:69 - [log_before_model]ToolMessage | {
+  "detail": "Not Found"
+}
