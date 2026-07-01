@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>AI 心理陪伴 - 实时语音播放</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        body {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #f7f9fc;
+        }
+        .chat-box {
+            height: 450px;
+            border: 1px solid #eee;
+            border-radius: 12px;
+            padding: 15px;
+            overflow-y: auto;
+            background: white;
+            margin-bottom: 15px;
+        }
+        .msg {
+            margin: 10px 0;
+            padding: 10px 14px;
+            border-radius: 10px;
+            max-width: 75%;
+        }
+        .user {
+            background: #e1f5fe;
+            margin-left: auto;
+        }
+        .ai {
+            background: #f1f1f1;
+        }
+        .input-area {
+            display: flex;
+            gap: 10px;
+        }
+        input {
+            flex: 1;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+        button {
+            padding: 12px 18px;
+            background: #4285f4;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        button:disabled {
+            background: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>💖 AI 心理陪伴（实时语音）</h2>
+    <div class="chat-box" id="chatBox"></div>
+
+    <div class="input-area">
+        <input type="text" id="userInput" placeholder="说点什么吧..." autocomplete="off">
+        <button onclick="sendMessage()">发送</button>
+    </div>
+
+    <script>
+        const chatBox = document.getElementById('chatBox');
+        const userInput = document.getElementById('userInput');
+        const ttsUrl = "http://127.0.0.1:9000/tts-stream";
+
+        // 发送消息 → 播放实时流式语音
+        async function sendMessage() {
+            const text = userInput.value.trim();
+            if (!text) return;
+
+            addMessage(text, 'user');
+            userInput.value = '';
+
+            try {
+                // 调用流式TTS接口
+                const response = await fetch(`${ttsUrl}?text=${encodeURIComponent(text)}`);
+                const audioBlob = await response.blob();
+
+                // 播放实时语音
+                const audioUrl = URL.createObjectURL(audioBlob);
+                const audio = new Audio(audioUrl);
+                audio.play();
+
+                addMessage("🔊 正在播放语音...", "ai");
+            } catch (err) {
+                addMessage("❌ 语音播放失败，请检查TTS服务是否启动", "ai");
+                console.error(err);
+            }
+        }
+
+        // 添加消息到界面
+        function addMessage(text, className) {
+            const div = document.createElement('div');
+            div.className = `msg ${className}`;
+            div.innerText = text;
+            chatBox.appendChild(div);
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        // 回车发送
+        userInput.addEventListener('keydown', e => {
+            if (e.key === 'Enter') sendMessage();
+        });
+    </script>
+</body>
+</html>
